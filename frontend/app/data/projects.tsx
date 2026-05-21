@@ -11,37 +11,37 @@ export const projectsData: Project[] = [
   {
     id: "fivelib",
     title: "FiveLib",
-    description: "Plataforma centralizada para documentação técnica acadêmica, gerenciamento de links privados e infraestrutura de suporte a tickets.",
+    description: "Centralized platform for technical academic documentation, featuring user libraries, private link management, and custom support ticket infrastructure.",
     tags: ["FastAPI", "Pydantic", "Next.js", "TypeScript", "PostgreSQL", "Docker"],
     githubUrl: "https://github.com/fivelibx/fivelib",
     deployUrl: "https://fivelib.vercel.app"
   },
   {
+    id: "rs-impact-analysis",
+    title: "RS Impact Analysis",
+    description: "Data engineering pipeline analyzing the correlation between precipitation data (INMET) and employment balances (CAGED) during climate events in Rio Grande do Sul.",
+    tags: ["Python", "PySpark", "Pandas", "Matplotlib", "Big Data"],
+    githubUrl: "https://github.com/lucaspaiva-lp/rs-impact"
+  },
+  {
     id: "backend-clinic",
     title: "Backend Clinic API",
-    description: "API corporativa desenvolvida com arquitetura em camadas, validação rígida de regras de negócio, dossiê técnico e diagramas de ER.",
+    description: "Corporate API featuring layered architecture, strict business rule validation, technical dossiers, and comprehensive ER/architecture diagrams.",
     tags: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL"],
     githubUrl: "https://github.com/lucaspaiva-lp/backend-clinica-api"
   },
   {
-    id: "big-data-analysis",
-    title: "INMET & CAGED Analysis",
-    description: "Análise quantitativa de correlação via PySpark entre índices de precipitação meteorológica e saldo de empregos formais no RS.",
-    tags: ["Python", "PySpark", "Big Data", "Data Analysis"],
-    githubUrl: "https://github.com/lucaspaiva-lp"
+    id: "rpg-textual",
+    title: "RPG Textual",
+    description: "Console-based turn-based RPG game focusing on core OOP concepts, encapsulation, and modular design.",
+    tags: ["Python", "JSON", "CLI", "OOP"],
+    githubUrl: "https://github.com/lucaspaiva-lp/rpg-textual"
   },
   {
     id: "ecommerce",
     title: "E-commerce",
-    description: "Engine completa de e-commerce com autenticação via JWT, gerenciamento de persistência assíncrona e serviços integrados de e-mail.",
+    description: "Full-stack e-commerce engine with JWT authentication, asynchronous persistence management, and integrated email services.",
     tags: ["FastAPI", "Tortoise ORM", "JWT", "Docker", "PostgreSQL"],
     githubUrl: "https://github.com/RodrigoDevBack/e-commerce"
-  },
-  {
-    id: "rpg-textual",
-    title: "RPG Textual CLI",
-    description: "Jogo de simulação baseado em console focado estritamente na aplicação prática de pilares de POO e design modular.",
-    tags: ["Python", "JSON", "CLI", "OOP"],
-    githubUrl: "https://github.com/lucaspaiva-lp/rpg-textual"
   }
 ];

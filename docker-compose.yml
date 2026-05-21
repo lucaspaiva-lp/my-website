@@ -1,5 +1,5 @@
 services:
-  portfolio:
+  website:
     build: ./frontend
     container_name: website
     ports:
@@ -10,3 +10,4 @@ services:
       - /app/node_modules
     environment:
       - WATCHPACK_POLLING=true # Essencial para o Hot Reload funcionar bem dentro do container
+    restart: unless-stopped

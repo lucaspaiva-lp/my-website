@@ -1,6 +1,5 @@
-import { Terminal } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
-// Tipagem para os dados vindos da API do GitHub
 interface GithubData {
   totalContributions: number;
   weeks: {
@@ -12,13 +11,11 @@ interface GithubData {
 }
 
 export default function ContributionGraph({ githubData }: { githubData?: GithubData | null }) {
-  const months = ["Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"];
+  const months = ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"];
   const days = ["Mon", "", "Wed", "", "Fri", ""];
 
-  // Fallback estático caso não tenha token configurado
   const fallbackPattern = [0,0,0,0,0,0,0,1,2,3,2,1,0,3,4,3,2,1,4,3,2,4,4,3,2,1,0,3,4,3,2,1,0,0,0,1,2,3,4,3,2,1,4,3,2,1,4,3];
 
-  // Função para mapear a quantidade de commits para a cor certa
   const getColorLevel = (count: number) => {
     if (count === 0) return 0;
     if (count <= 3) return 1;
@@ -27,12 +24,10 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
     return 4;
   };
 
-  // Prepara o grid de contribuições
   let contributionGrid: number[] = [];
-  let totalCommits = 1092; // Valor de fallback
+  let totalCommits = 1092;
 
   if (githubData) {
-    // Achata o array do GraphQL para uma lista simples de blocos
     totalCommits = githubData.totalContributions;
     githubData.weeks.forEach(week => {
       week.contributionDays.forEach(day => {
@@ -40,14 +35,12 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
       });
     });
   } else {
-    // Usa o fallback estático
     contributionGrid = Array.from({ length: 371 }).map((_, i) => {
       const patternIndex = i % fallbackPattern.length;
       return i < 140 ? 0 : fallbackPattern[patternIndex];
     });
   }
 
-  // Preenche espaços vazios se o ano ainda não acabou
   while (contributionGrid.length < 371) {
     contributionGrid.push(0);
   }
@@ -56,9 +49,9 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
     <div className="p-5 bg-zinc-900/30 border border-zinc-900 rounded-xl flex flex-col gap-4">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <div className="flex items-center gap-2 text-zinc-400">
-          <Terminal size={16} />
+          <FaGithub size={16} />
           <h3 className="text-sm font-semibold tracking-tight text-zinc-200">
-            {totalCommits.toLocaleString('pt-BR')} contribuições no último ano
+            {totalCommits.toLocaleString('en-US')} contributions in the last year
           </h3>
         </div>
         <a 
@@ -108,13 +101,13 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
           </div>
           
           <div className="flex justify-end items-center gap-1.5 mt-2 text-[11px] pr-2">
-            <span>Menos</span>
+            <span>Less</span>
             <div className="w-[10px] h-[10px] rounded-[2px] bg-zinc-900 border border-zinc-950" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-900/60" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-700/70" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-500/80" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-400" />
-            <span>Mais</span>
+            <span>More</span>
           </div>
 
         </div>
