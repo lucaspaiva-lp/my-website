@@ -31,14 +31,8 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/lucaspaiva-lp"
   },
   {
-    id: "homelab-infra",
-    title: "Homelab Infrastructure",
-    description: "Orquestração e automação de servidor auto-hospedado (Samba, Plex) integrado logicamente via túneis privados ZeroTier.",
-    tags: ["Docker", "Linux", "Samba", "ZeroTier", "Infrastructure"]
-  },
-  {
-    id: "ecommerce-platform",
-    title: "E-commerce Engine",
+    id: "ecommerce",
+    title: "E-commerce",
     description: "Engine completa de e-commerce com autenticação via JWT, gerenciamento de persistência assíncrona e serviços integrados de e-mail.",
     tags: ["FastAPI", "Tortoise ORM", "JWT", "Docker", "PostgreSQL"],
     githubUrl: "https://github.com/RodrigoDevBack/e-commerce"
