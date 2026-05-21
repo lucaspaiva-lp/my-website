@@ -6,8 +6,13 @@ import { Code2, Award } from "lucide-react";
 
 // 🛠️ Função isolada para buscar os dados do GitHub via GraphQL no lado do servidor
 async function getGithubContributions() {
-  const token = process.env.GITHUB_TOKEN;
-  
+  const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
+  // 🔍 LOG DE VALIDAÇÃO: Isso vai printar diretamente no terminal do Docker logs
+  console.log("==========================================");
+  console.log("DOCKER RUNTIME VERIFICATION:");
+  console.log("Token encontrado?:", token ? "SIM (Inicia com " + token.substring(0, 7) + "...)" : "NÃO (undefined)");
+  console.log("==========================================");
+
   if (!token) {
     console.warn("GITHUB_TOKEN não encontrado. Renderizando gráfico estático de fallback.");
     return null; 
@@ -32,19 +37,25 @@ async function getGithubContributions() {
   `;
 
   try {
-    const res = await fetch("https://api.github.com/graphql", {
+      const res = await fetch("https://api.github.com/graphql", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ query }),
-      next: { revalidate: 3600 }, // Cache de 1 hora para performance
+      cache: 'no-store', // 👈 Força o Next.js a buscar dados novos a cada refresh
     });
     
     if (!res.ok) throw new Error("Falha ao buscar dados do GitHub");
     
     const json = await res.json();
+    console.log("==========================================");
+    console.log("RESPOSTA DA API DO GITHUB:");
+    console.log("Retornou erros?:", json.errors ? JSON.stringify(json.errors) : "Não");
+    console.log("Dados do calendário encontrados?:", json.data?.user?.contributionsCollection?.contributionCalendar ? "SIM" : "NÃO");
+    console.log("Total de contribuições retornado:", json.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions);
+    console.log("==========================================");
     return json.data.user.contributionsCollection.contributionCalendar;
   } catch (error) {
     console.error("Erro na requisição do GitHub:", error);
@@ -68,7 +79,7 @@ export default async function Home() {
         <section className="flex-1 flex flex-col gap-10">
           
           {/* Gráfico de Contribuições Nativo e Conectado no Topo */}
-          <ContributionGraph />
+          <ContributionGraph githubData={githubData} />
           
           {/* Seção 1: Stack Tecnológica */}
           <div className="flex flex-col gap-4">
