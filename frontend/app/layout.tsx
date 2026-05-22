@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     siteName: "Lucas Paiva Portfolio",
     images: [
       {
-        url: "/frontend/public/favicon-icon.png",
-        width: 800,
-        height: 800,
+        url: "https://lucaspaiva-lp.vercel.app/favicon-icon.png",
+        width: 512,
+        height: 512,
         alt: "Lucas Paiva",
       },
     ],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lucas Paiva | Software Engineer",
     description: "Software Engineer focused on end-to-end architecture, scalable backend systems, and data-driven solutions.",
-    images: ["/frontend/public/favicon-icon.png"],
+    images: ["https://lucaspaiva-lp.vercel.app/favicon-icon.png"],
   },
 };
 
