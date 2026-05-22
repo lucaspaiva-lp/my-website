@@ -7,11 +7,11 @@ export interface Project {
   deployUrl?: string;
 }
 
-export const projectsData: Project[] = [
+export const getProjectsData = (t: any): Project[] => [
   {
     id: "fivelib",
     title: "FiveLib",
-    description: "Centralized platform for technical academic documentation, featuring user libraries, private link management, and custom support ticket infrastructure.",
+    description: t.projects["fivelib"],
     tags: ["FastAPI", "Pydantic", "Next.js", "TypeScript", "PostgreSQL", "Docker"],
     githubUrl: "https://github.com/fivelibx/fivelib",
     deployUrl: "https://fivelib.vercel.app"
@@ -19,28 +19,28 @@ export const projectsData: Project[] = [
   {
     id: "rs-impact-analysis",
     title: "RS Impact Analysis",
-    description: "Data engineering pipeline analyzing the correlation between precipitation data (INMET) and employment balances (CAGED) during climate events in Rio Grande do Sul.",
+    description: t.projects["rs-impact-analysis"],
     tags: ["Python", "PySpark", "Pandas", "Matplotlib", "Big Data"],
     githubUrl: "https://github.com/lucaspaiva-lp/rs-impact"
   },
   {
     id: "backend-clinic",
     title: "Backend Clinic API",
-    description: "Corporate API featuring layered architecture, strict business rule validation, technical dossiers, and comprehensive ER/architecture diagrams.",
+    description: t.projects["backend-clinic"],
     tags: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL"],
     githubUrl: "https://github.com/lucaspaiva-lp/backend-clinica-api"
   },
   {
     id: "rpg-textual",
     title: "RPG Textual",
-    description: "Console-based turn-based RPG game focusing on core OOP concepts, encapsulation, and modular design.",
+    description: t.projects["rpg-textual"],
     tags: ["Python", "JSON", "CLI", "OOP"],
     githubUrl: "https://github.com/lucaspaiva-lp/rpg-textual"
   },
   {
     id: "ecommerce",
     title: "E-commerce",
-    description: "Full-stack e-commerce engine with JWT authentication, asynchronous persistence management, and integrated email services.",
+    description: t.projects["ecommerce"],
     tags: ["FastAPI", "Tortoise ORM", "JWT", "Docker", "PostgreSQL"],
     githubUrl: "https://github.com/RodrigoDevBack/e-commerce"
   }

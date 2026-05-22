@@ -1,4 +1,7 @@
+"use client";
+
 import { FaGithub } from "react-icons/fa";
+import { useLanguage } from "../app/data/LanguageContext";
 
 interface GithubData {
   totalContributions: number;
@@ -11,7 +14,9 @@ interface GithubData {
 }
 
 export default function ContributionGraph({ githubData }: { githubData?: GithubData | null }) {
-  const months = ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"];
+  const { t } = useLanguage();
+  
+  const months = t.graph.months;
   const days = ["Mon", "", "Wed", "", "Fri", ""];
 
   const fallbackPattern = [0,0,0,0,0,0,0,1,2,3,2,1,0,3,4,3,2,1,4,3,2,4,4,3,2,1,0,3,4,3,2,1,0,0,0,1,2,3,4,3,2,1,4,3,2,1,4,3];
@@ -51,7 +56,7 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
         <div className="flex items-center gap-2 text-zinc-400">
           <FaGithub size={16} />
           <h3 className="text-sm font-semibold tracking-tight text-zinc-200">
-            {totalCommits.toLocaleString('en-US')} contributions in the last year
+            {totalCommits.toLocaleString(t.graph.locale)} {t.graph.suffix}
           </h3>
         </div>
         <a 
@@ -101,13 +106,13 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
           </div>
           
           <div className="flex justify-end items-center gap-1.5 mt-2 text-[11px] pr-2">
-            <span>Less</span>
+            <span>{t.graph.less}</span>
             <div className="w-[10px] h-[10px] rounded-[2px] bg-zinc-900 border border-zinc-950" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-900/60" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-700/70" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-500/80" />
             <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-400" />
-            <span>More</span>
+            <span>{t.graph.more}</span>
           </div>
 
         </div>

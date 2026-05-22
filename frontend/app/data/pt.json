@@ -1,0 +1,30 @@
+{
+  "techStackTitle": "Tecnologias & Core Stack",
+  "featuredProjectsTitle": "Projetos em Destaque",
+  "featuredProjectsSub": "Aplicações, microsserviços e engenharia de dados.",
+  "certificationsTitle": "Certificações Técnicas",
+  "certificationsSub": "Histórico de validação em engenharia de software e desenvolvimento backend.",
+  "certificationsBtn": "Acessar Repositório",
+  "footerDevelopedBy": "Desenvolvido por lucaspaiva-lp.",
+  "sidebar": {
+    "role": "Engenheiro de Software",
+    "bio": "Engenheiro de Software focado em arquitetura de ponta a ponta, sistemas de backend escaláveis e soluções orientadas a dados com Python.",
+    "contactNote": "Sinta-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
+    "resumeBtn": "Currículo",
+    "certificationsBtn": "Certificações"
+  },
+  "graph": {
+    "suffix": "contribuições no último ano",
+    "locale": "pt-BR",
+    "less": "Menos",
+    "more": "Mais",
+    "months": ["Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez", "Jan", "Fev", "Mar", "Abr", "Mai"]
+  },
+  "projects": {
+    "fivelib": "Plataforma centralizada para documentação técnica acadêmica, contando com bibliotecas de usuários, gerenciamento de links privados e infraestrutura personalizada de tickets de suporte.",
+    "rs-impact-analysis": "Pipeline de engenharia de dados analisando a correlação entre dados de precipitação (INMET) e saldos de emprego (CAGED) durante eventos climáticos no Rio Grande do Sul.",
+    "backend-clinic": "API corporativa com arquitetura em camadas, validação estrita de regras de negócio, dossiês técnicos e diagramas abrangentes de arquitetura/DER.",
+    "rpg-textual": "Jogo de RPG em turnos baseado em console com foco em conceitos centrais de POO, encapsulamento e design modular.",
+    "ecommerce": "Mecanismo completo de e-commerce full-stack com autenticação JWT, gerenciamento assíncrono de persistência e serviços integrados de e-mail."
+  }
+}

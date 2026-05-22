@@ -1,7 +1,12 @@
+"use client";
+
 import { Mail, FileText, Award, MessageSquare } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from "../app/data/LanguageContext";
 
 export default function ProfileSidebar() {
+  const { t } = useLanguage();
+
   return (
     <aside className="w-full md:w-80 bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 h-fit md:sticky md:top-8 flex flex-col items-center text-center backdrop-blur-sm">
       
@@ -14,16 +19,16 @@ export default function ProfileSidebar() {
       </div>
 
       <h1 className="text-xl font-bold text-zinc-100 tracking-tight">Lucas Paiva</h1>
-      <p className="text-sm text-zinc-400 mt-2 font-medium">Software Enginner</p>
+      <p className="text-sm text-zinc-400 mt-2 font-medium">{t.sidebar.role}</p>
       
       <p className="text-xs text-zinc-500 mt-3 max-w-xs leading-relaxed">
-        Software Engineer focused on end-to-end architecture, scalable backend systems, and data-driven solutions with Python.
+        {t.sidebar.bio}
       </p>
 
       {/* Nota de Contato */}
       <div className="mt-4 p-3 bg-zinc-950/50 border border-zinc-800/50 rounded-lg flex items-start gap-2 text-[11px] text-zinc-400 text-left">
         <MessageSquare size={14} className="shrink-0 mt-0.5 text-emerald-500" />
-        <p>Feel free to reach out via email or LinkedIn for collaborations or questions.</p>
+        <p>{t.sidebar.contactNote}</p>
       </div>
 
       <div className="flex gap-5 mt-5 text-zinc-400">
@@ -33,7 +38,7 @@ export default function ProfileSidebar() {
         <a href="https://www.linkedin.com/in/lucaspaiva-lp" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:text-blue-500 transition-colors duration-200">
           <FaLinkedin size={22} />
         </a>
-        <a href="mailto:seu-email@exemplo.com" title="E-mail" className="hover:text-emerald-500 transition-colors duration-200">
+        <a href="mailto:lucaspaiva-lp@outlook.com" title="E-mail" className="hover:text-emerald-500 transition-colors duration-200">
           <Mail size={22} />
         </a>
       </div>
@@ -47,7 +52,7 @@ export default function ProfileSidebar() {
         >
           <span className="flex items-center gap-3">
             <FileText size={18} className="text-zinc-400" />
-            Resume
+            {t.sidebar.resumeBtn}
           </span>
           <span className="text-zinc-600 group-hover:text-zinc-400 transition">→</span>
         </a>
@@ -60,7 +65,7 @@ export default function ProfileSidebar() {
         >
           <span className="flex items-center gap-3">
             <Award size={18} className="text-zinc-400" />
-            Certifications
+            {t.sidebar.certificationsBtn}
           </span>
           <span className="text-zinc-600 group-hover:text-zinc-400 transition">→</span>
         </a>
