@@ -14,10 +14,10 @@ export default function ProfileSidebar() {
       </div>
 
       <h1 className="text-xl font-bold text-zinc-100 tracking-tight">Lucas Paiva</h1>
-      <p className="text-sm text-zinc-400 mt-2 font-medium">Backend-focused Developer</p>
+      <p className="text-sm text-zinc-400 mt-2 font-medium">Software Enginner</p>
       
       <p className="text-xs text-zinc-500 mt-3 max-w-xs leading-relaxed">
-        Experienced in SQL-oriented systems, backend architecture, and API development with Python/FastAPI.
+        Software Engineer focused on end-to-end architecture, scalable backend systems, and data-driven solutions with Python.
       </p>
 
       {/* Nota de Contato */}
