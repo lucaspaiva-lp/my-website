@@ -1,0 +1,30 @@
+{
+  "techStackTitle": "Technologies & Core Stack",
+  "featuredProjectsTitle": "Featured Projects",
+  "featuredProjectsSub": "Applications, microservices, and data engineering.",
+  "certificationsTitle": "Technical Certifications",
+  "certificationsSub": "Validation history in software engineering and backend development.",
+  "certificationsBtn": "Access Repository",
+  "footerDevelopedBy": "Developed by lucaspaiva-lp.",
+  "sidebar": {
+    "role": "Software Engineer",
+    "bio": "Software Engineer focused on end-to-end architecture, scalable backend systems, and data-driven solutions with Python.",
+    "contactNote": "Feel free to reach out via email or LinkedIn for collaborations or questions.",
+    "resumeBtn": "Resume",
+    "certificationsBtn": "Certifications"
+  },
+  "graph": {
+    "suffix": "contributions in the last year",
+    "locale": "en-US",
+    "less": "Less",
+    "more": "More",
+    "months": ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"]
+  },
+  "projects": {
+    "fivelib": "Centralized platform for technical academic documentation, featuring user libraries, private link management, and custom support ticket infrastructure.",
+    "rs-impact-analysis": "Data engineering pipeline analyzing the correlation between precipitation data (INMET) and employment balances (CAGED) during climate events in Rio Grande do Sul.",
+    "backend-clinic": "Corporate API featuring layered architecture, strict business rule validation, technical dossiers, and comprehensive ER/architecture diagrams.",
+    "rpg-textual": "Console-based turn-based RPG game focusing on core OOP concepts, encapsulation, and modular design.",
+    "ecommerce": "Full-stack e-commerce engine with JWT authentication, asynchronous persistence management, and integrated email services."
+  }
+}
