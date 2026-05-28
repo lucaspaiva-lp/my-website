@@ -1,4 +1,4 @@
-
+![my-site](/docs/assets/website/banner.jpg)
 # My Portfolio
 
 Personal portfolio website built to showcase technical projects, software engineering background, and data analysis contributions.
