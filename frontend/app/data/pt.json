@@ -9,7 +9,7 @@
   "sidebar": {
     "role": "Engenheiro de Software",
     "bio": "Engenheiro de Software focado em arquitetura de ponta a ponta, sistemas de backend escaláveis e soluções orientadas a dados com Python.",
-    "contactNote": "Sinta-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
+    "contactNote": "Sinto-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
     "resumeBtn": "Currículo",
     "certificationsBtn": "Certificações"
   },
@@ -26,5 +26,15 @@
     "backend-clinic": "API corporativa com arquitetura em camadas, validação estrita de regras de negócio, dossiês técnicos e diagramas abrangentes de arquitetura/DER.",
     "rpg-textual": "Jogo de RPG em turnos baseado em console com foco em conceitos centrais de POO, encapsulamento e design modular.",
     "ecommerce": "Mecanismo completo de e-commerce full-stack com autenticação JWT, gerenciamento assíncrono de persistência e serviços integrados de e-mail."
+  },
+  "certificates": {
+    "title": "Certificados Principais",
+    "viewAllOnGithub": "Ver todos no GitHub →",
+    "completedIn": "Concluído em:",
+    "viewOriginalPdf": "Visualizar PDF Original",
+    "tabCs50Sql": "HarvardX CS50 SQL",
+    "tabEfSet": "EF SET English",
+    "tabOracleDev": "Oracle Dev",
+    "tabPythonLogic": "Lógica Python"
   }
 }

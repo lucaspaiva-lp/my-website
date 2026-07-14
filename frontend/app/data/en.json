@@ -26,5 +26,15 @@
     "backend-clinic": "Corporate API featuring layered architecture, strict business rule validation, technical dossiers, and comprehensive ER/architecture diagrams.",
     "rpg-textual": "Console-based turn-based RPG game focusing on core OOP concepts, encapsulation, and modular design.",
     "ecommerce": "Full-stack e-commerce engine with JWT authentication, asynchronous persistence management, and integrated email services."
+  },
+  "certificates": {
+    "title": "Main Certificates",
+    "viewAllOnGithub": "View all on GitHub →",
+    "completedIn": "Completed in:",
+    "viewOriginalPdf": "View Original PDF",
+    "tabCs50Sql": "HarvardX CS50 SQL",
+    "tabEfSet": "EF SET English",
+    "tabOracleDev": "Oracle Dev",
+    "tabPythonLogic": "Python Logic"
   }
 }

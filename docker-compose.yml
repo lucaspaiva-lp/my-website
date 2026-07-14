@@ -4,10 +4,11 @@ services:
     container_name: website
     ports:
       - "3000:3000"
-    volumes:
-      - ./frontend:/app
-      - /app/.next
-      - /app/node_modules
+    # Comente as 3 linhas de volumes abaixo para o Docker não tentar ler a rede em tempo real:
+    # volumes:
+    #   - ./frontend:/app
+    #   - /app/.next
+    #   - /app/node_modules
     environment:
-      - WATCHPACK_POLLING=true # Essencial para o Hot Reload funcionar bem dentro do container
+      - WATCHPACK_POLLING=true
     restart: unless-stopped
