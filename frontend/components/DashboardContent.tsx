@@ -3,6 +3,7 @@
 import ProfileSidebar from "./ProfileSidebar";
 import ProjectCard from "./ProjectCard";
 import ContributionGraph from "./ContributionGraph";
+import Certificates from "./Certificates"; // ─── ADICIONADO AQUI ───
 import { getProjectsData } from "../app/data/projects";
 import { useLanguage } from "../app/data/LanguageContext";
 import { LanguageToggle } from "../app/data/LanguageToggle";
@@ -58,6 +59,9 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
               ))}
             </div>
           </div>
+
+          {/* ─── COMPONENTE DE CERTIFICADOS INTERATIVOS ADICIONADO AQUI ─── */}
+          <Certificates />
 
           {/* Section 3: Certifications */}
           <div className="p-4 bg-zinc-900/30 border border-zinc-900 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
