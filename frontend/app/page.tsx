@@ -1,6 +1,8 @@
 import DashboardContent from "@/components/DashboardContent";
 
+
 // 🛠️ Server-side function to fetch GitHub data via GraphQL
+/*
 async function getGithubContributions() {
   const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
   console.log("==========================================");
@@ -56,10 +58,14 @@ async function getGithubContributions() {
     console.error("Error in GitHub request:", error);
     return null;
   }
-}
+  }
+  export default async function Home() {
+    // const githubData = await getGithubContributions();
+  
+    return <DashboardContent githubData={null} />;
+  }
+  */
 
-export default async function Home() {
-  const githubData = await getGithubContributions();
-
-  return <DashboardContent githubData={githubData} />;
+  export default async function Home() {
+    return <DashboardContent githubData={null} />;
 }

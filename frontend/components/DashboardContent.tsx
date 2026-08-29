@@ -27,7 +27,7 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
         <section className="flex-1 flex flex-col gap-10">
           
           {/* Contribution Graph */}
-          <ContributionGraph githubData={githubData} />
+          {/*<ContributionGraph githubData={githubData} />*/}
           
           {/* Section 1: Tech Stack */}
           <div className="flex flex-col gap-4">
