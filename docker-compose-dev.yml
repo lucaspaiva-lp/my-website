@@ -1,0 +1,22 @@
+services:
+  website:
+    build: ./frontend
+    container_name: website
+    ports:
+      - "3000:3000"
+    # Comente as 3 linhas de volumes abaixo para o Docker não tentar ler a rede em tempo real:
+    # volumes:
+    #   - ./frontend:/app
+    #   - /app/.next
+    #   - /app/node_modules
+    environment:
+      - WATCHPACK_POLLING=true
+      # Limita também a memória máxima da instância do Node.js interna (ex: 450MB)
+      - NODE_OPTIONS=--max-old-space-size=450
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
+    restart: unless-stopped

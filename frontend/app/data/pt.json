@@ -9,7 +9,7 @@
   "sidebar": {
     "role": "Engenheiro de Software",
     "bio": "Engenheiro de Software focado em arquitetura de ponta a ponta, sistemas de backend escaláveis e soluções orientadas a dados com Python.",
-    "contactNote": "Sinto-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
+    "contactNote": "Sinta-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
     "resumeBtn": "Currículo",
     "certificationsBtn": "Certificações"
   },
@@ -36,5 +36,92 @@
     "tabEfSet": "EF SET English",
     "tabOracleDev": "Oracle Dev",
     "tabPythonLogic": "Lógica Python"
+  },
+  "pricing": {
+    "title": "Serviços & Investimento",
+    "subtitle": "Pacotes sob medida para prototipagem, aplicações full-stack e sistemas personalizados.",
+    "popularTag": "Mais Popular",
+    "orderBtn": "Solicitar Orçamento",
+    "plans": [
+      {
+        "name": "Basic",
+        "tagline": "Protótipo Web & API Simples",
+        "price": "R$ 250",
+        "currency": "BRL",
+        "delivery": "Entrega em 2 dias",
+        "revisions": "2 revisões incluídas",
+        "features": [
+          "1 Endpoint API ou script simples em Python",
+          "Protótipo de Interface Web (UI básica)",
+          "Infraestrutura Docker básica",
+          "Código-fonte completo incluso"
+        ]
+      },
+      {
+        "name": "Standard",
+        "tagline": "Aplicação Web Full-Stack",
+        "price": "R$ 800",
+        "currency": "BRL",
+        "delivery": "Entrega em 4 dias",
+        "revisions": "3 revisões incluídas",
+        "popular": true,
+        "features": [
+          "API RESTful funcional (3 a 5 endpoints)",
+          "Interface Web completa & responsiva",
+          "Integração com Banco de Dados PostgreSQL",
+          "Ambiente Docker Compose para produção",
+          "Código-fonte & Documentação Swagger"
+        ]
+      },
+      {
+        "name": "Premium",
+        "tagline": "Sistema Personalizado Escalável",
+        "price": "R$ 1.800",
+        "currency": "BRL",
+        "delivery": "Entrega em 7 dias",
+        "revisions": "5 revisões incluídas",
+        "features": [
+          "Sistema full-stack sob medida completo",
+          "Documentação técnica PRD & Diagramas DER",
+          "Autenticação JWT, segurança & tarefas assíncronas",
+          "Código-fonte com comentários detalhados",
+          "Suporte de deploy para nuvem (AWS/DigitalOcean)"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Dúvidas comuns sobre serviços, formas de pagamento, fluxo de trabalho e entrega.",
+    "items": [
+      {
+        "question": "Quais são as formas de pagamento e como funciona o processo de trabalho?",
+        "answer": "Aceito pagamentos via Pix para clientes no Brasil, além de Wise e Nomad para transações internacionais. O processo segue estritamente um PRD (Product Requirement Document) alinhado no início. Para garantia de ambas as partes, ofereço três modalidades de pagamento:\n\n1. 50% de entrada e 50% na entrega final do projeto.\n2. Pagamento por Sprints (ex: se o roadmap tiver 8 sprints, o valor total é dividido proporcionalmente a cada entrega).\n3. Pagamento integral antecipado.\n\nO desenvolvimento conta com reuniões periódicas (semanais ou quinzenais) para validação das entregas de cada sprint. Vale ressaltar que os tokens e credenciais finais são entregues apenas ao término do projeto, garantindo a segurança de ambas as partes."
+      },
+      {
+        "question": "Que tipos de serviços e projetos você desenvolve?",
+        "answer": "Ofereço soluções que vão desde a prototipagem inicial e prova de conceito (PoC) para validar ideias, até o desenvolvimento completo de software sob medida, sistemas web escaláveis e sites completos. Também atuo com análise/engenharia de dados e infraestrutura de TI."
+      },
+      {
+        "question": "Qual tech stack você utiliza no desenvolvimento?",
+        "answer": "Desenvolvo infraestruturas backend robustas utilizando Python, FastAPI e Pydantic, integrados ao PostgreSQL para gestão de banco de dados. Toda a aplicação é containerizada com Docker para garantir deploy simples e escalabilidade."
+      },
+      {
+        "question": "Você fornece documentação para o software desenvolvido?",
+        "answer": "Escrevo documentação detalhada antes mesmo de codificar. Essa estrutura garante transparência total e elimina o acoplamento com fornecedor (vendor lock-in), permitindo que qualquer engenheiro futuro entenda, mantenha ou escale o sistema sem dificuldades."
+      },
+      {
+        "question": "Eu receberei o código-fonte completo do projeto?",
+        "answer": "Sim, com certeza. Assim que o software é concluído e entregue, você obtém 100% de propriedade do código-fonte limpo, documentado e de todas as configurações de containers."
+      },
+      {
+        "question": "Você ajuda a realizar o deploy da aplicação no servidor?",
+        "answer": "Entrego o software totalmente containerizado com Docker, pronto para produção em qualquer provedor cloud (AWS, DigitalOcean, etc.). Posso orientar e auxiliar na configuração inicial do servidor e no deploy."
+      },
+      {
+        "question": "O escopo e o orçamento podem ser negociados?",
+        "answer": "Sim. Cada projeto possui complexidades únicas. O escopo e o investimento são flexíveis e totalmente adaptáveis às necessidades específicas, funcionalidades e orçamento da sua demanda."
+      }
+    ]
   }
 }
