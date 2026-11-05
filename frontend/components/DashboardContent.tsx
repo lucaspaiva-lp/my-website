@@ -3,7 +3,9 @@
 import ProfileSidebar from "./ProfileSidebar";
 import ProjectCard from "./ProjectCard";
 import ContributionGraph from "./ContributionGraph";
-import Certificates from "./Certificates"; // ─── ADICIONADO AQUI ───
+import Certificates from "./Certificates";
+import FaqSection from "./FaqSection";
+import PricingSection from "./PricingSection";
 import { getProjectsData } from "../app/data/projects";
 import { useLanguage } from "../app/data/LanguageContext";
 import { LanguageToggle } from "../app/data/LanguageToggle";
@@ -60,7 +62,7 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
             </div>
           </div>
 
-          {/* ─── COMPONENTE DE CERTIFICADOS INTERATIVOS ADICIONADO AQUI ─── */}
+          {/* COMPONENTE DE CERTIFICADOS INTERATIVOS */}
           <Certificates />
 
           {/* Section 3: Certifications */}
@@ -81,6 +83,12 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
               {t.certificationsBtn}
             </a>
           </div>
+
+          {/* ─── SEÇÃO DE PRECIFICAÇÃO E SERVIÇOS ─── */}
+          <PricingSection />
+
+          {/* ─── SEÇÃO DE FAQ ─── */}
+          <FaqSection />
 
           {/* Footer */}
           <footer className="mt-4 pt-6 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-600">

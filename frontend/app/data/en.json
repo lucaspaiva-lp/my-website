@@ -36,5 +36,92 @@
     "tabEfSet": "EF SET English",
     "tabOracleDev": "Oracle Dev",
     "tabPythonLogic": "Python Logic"
+  },
+  "pricing": {
+    "title": "Services & Pricing",
+    "subtitle": "Tailored packages for prototyping, full-stack web apps, and custom systems.",
+    "popularTag": "Most Popular",
+    "orderBtn": "Request Quote",
+    "plans": [
+      {
+        "name": "Basic",
+        "tagline": "Web Prototype & Simple API",
+        "price": "$40",
+        "currency": "USD",
+        "delivery": "2-day delivery",
+        "revisions": "2 revisions included",
+        "features": [
+          "1 API Endpoint or Python script",
+          "Basic Web UI / Frontend Prototype",
+          "Basic Docker setup",
+          "Full source code included"
+        ]
+      },
+      {
+        "name": "Standard",
+        "tagline": "Full Stack Web Application",
+        "price": "$140",
+        "currency": "USD",
+        "delivery": "4-day delivery",
+        "revisions": "3 revisions included",
+        "popular": true,
+        "features": [
+          "Functional RESTful API (3–5 endpoints)",
+          "Responsive Web UI / Dashboard",
+          "PostgreSQL Database integration",
+          "Production-ready Docker Compose",
+          "Source code & Swagger docs"
+        ]
+      },
+      {
+        "name": "Premium",
+        "tagline": "Scalable Custom System",
+        "price": "$320",
+        "currency": "USD",
+        "delivery": "7-day delivery",
+        "revisions": "5 revisions included",
+        "features": [
+          "Complete custom full-stack system",
+          "PRD documentation & ER diagrams",
+          "JWT Auth, security & async tasks",
+          "Detailed code comments",
+          "Cloud deployment assistance (AWS/DigitalOcean)"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about services, payment methods, workflow, and delivery.",
+    "items": [
+      {
+        "question": "What payment methods do you accept and how does the process work?",
+        "answer": "I accept payments via Wise and Nomad (US bank account), ideal for international transfers with lower fees, as well as Pix for clients based in Brazil. The workflow strictly follows a PRD (Product Requirement Document) defined before starting. To ensure security for both parties, I offer three payment models:\n\n1. 50% upfront deposit and 50% upon final delivery.\n2. Payment per Sprint (e.g., if the roadmap has 8 sprints, the total amount is split proportionally across each milestone).\n3. Full upfront payment.\n\nDevelopment includes periodic alignment meetings (weekly or bi-weekly) to review each sprint's progress. Please note that access tokens and production credentials are only delivered upon project completion for mutual safety."
+      },
+      {
+        "question": "What types of services and projects do you offer?",
+        "answer": "I provide end-to-end solutions ranging from initial prototyping and proof of concept (PoC) to validate ideas, up to full-scale custom software development, scalable web applications, and complete websites. I also offer data engineering/analysis and IT infrastructure consulting."
+      },
+      {
+        "question": "What tech stack do you use to build applications?",
+        "answer": "I develop robust backend structures using Python, FastAPI, and Pydantic, integrated with PostgreSQL for database management. The entire application is containerized using Docker to ensure smooth deployment and scalability."
+      },
+      {
+        "question": "Do you provide documentation for the software you develop?",
+        "answer": "I write comprehensive documentation before writing code. This blueprint ensures absolute transparency, eliminating vendor lock-in so any future engineer can seamlessly understand, maintain, or scale the system."
+      },
+      {
+        "question": "Will I receive the complete source code of the project?",
+        "answer": "Yes, absolutely. Once the software is completed and delivered, you receive 100% full ownership of the clean, well-documented source code and all container configurations."
+      },
+      {
+        "question": "Can you help me deploy the application to a server?",
+        "answer": "I deliver software fully containerized with Docker, making it production-ready for cloud providers (AWS, DigitalOcean, etc.). I can guide and assist you through the initial server setup and deployment phase."
+      },
+      {
+        "question": "Can the scope and budget be negotiated based on project needs?",
+        "answer": "Yes. Every system has unique complexities. Pricing and scope are flexible and fully adaptable to your project's specific requirements, features, and budget."
+      }
+    ]
   }
 }
