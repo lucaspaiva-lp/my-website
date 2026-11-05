@@ -80,24 +80,24 @@ export default function PricingSection() {
             {/* Opções de Ação (Email Direto + Fiverr) */}
             <div className="flex flex-col gap-2 pt-2 border-t border-zinc-900/60">
               {/* Botão 1: Contato Direto por E-mail */}
-              <a
+                <a
                 href={getMailtoLink(plan.name)}
                 className="w-full py-2 px-3 rounded-lg text-xs font-semibold text-center transition flex items-center justify-center gap-2 bg-zinc-100 text-zinc-950 hover:bg-zinc-300"
-              >
+                >
                 <Mail size={14} />
-                <span>{language === 'pt-BR' ? 'Contato Direto (E-mail)' : 'Direct Contact (Email)'}</span>
-              </a>
+                <span>{language === 'pt' ? 'Contato Direto (E-mail)' : 'Direct Contact (Email)'}</span>
+                </a>
 
-              {/* Botão 2: Pedido Protegido via Fiverr */}
-              <a
+                {/* Botão 2: Pedido Protegido via Fiverr */}
+                <a
                 href={FIVERR_GIG_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2 px-3 rounded-lg text-xs font-semibold text-center transition flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-zinc-300"
-              >
+                >
                 <ExternalLink size={14} className="text-emerald-400" />
-                <span>{language === 'pt-BR' ? 'Pedir via Fiverr' : 'Order via Fiverr'}</span>
-              </a>
+                <span>{language === 'pt' ? 'Pedir via Fiverr' : 'Order via Fiverr'}</span>
+                </a>
             </div>
           </div>
         ))}
