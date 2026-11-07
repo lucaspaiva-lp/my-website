@@ -39,16 +39,33 @@
   },
   "pricing": {
     "title": "Services & Pricing",
-    "subtitle": "Tailored packages for prototyping, full-stack web apps, and custom systems.",
+    "subtitle": "Base rates for MVP prototyping, full-stack applications, and custom software engineering.",
     "popularTag": "Most Popular",
+    "startingAt": "Starting at",
     "orderBtn": "Request Quote",
+    "addonsTitle": "Optional Services & Add-ons",
+    "addonsSubtitle": "Additional services available upon request to complement your base package:",
+    "addons": [
+      {
+        "title": "Team Training & Handover",
+        "description": "Guided walkthroughs, operational training, and documentation review for your internal dev team."
+      },
+      {
+        "title": "Long-Term Maintenance & SLA",
+        "description": "Dedicated post-launch support, security patches, infrastructure monitoring, and feature updates."
+      },
+      {
+        "title": "Software Licensing & IP Transfer",
+        "description": "Full intellectual property rights transfer, commercial usage terms, and customized software licensing contracts."
+      }
+    ],
     "plans": [
       {
         "name": "Basic",
         "tagline": "Web Prototype & Simple API",
         "price": "$40",
         "currency": "USD",
-        "delivery": "2-day delivery",
+        "delivery": "Est. 2-day delivery",
         "revisions": "2 revisions included",
         "features": [
           "1 API Endpoint or Python script",
@@ -62,7 +79,7 @@
         "tagline": "Full Stack Web Application",
         "price": "$140",
         "currency": "USD",
-        "delivery": "4-day delivery",
+        "delivery": "Est. 4-day delivery",
         "revisions": "3 revisions included",
         "popular": true,
         "features": [
@@ -78,7 +95,7 @@
         "tagline": "Scalable Custom System",
         "price": "$320",
         "currency": "USD",
-        "delivery": "7-day delivery",
+        "delivery": "Est. 7-day delivery",
         "revisions": "5 revisions included",
         "features": [
           "Complete custom full-stack system",
@@ -88,7 +105,13 @@
           "Cloud deployment assistance (AWS/DigitalOcean)"
         ]
       }
-    ]
+    ],
+    "consultation": {
+      "badge": "Free Discovery Call",
+      "title": "Not sure about your scope or budget?",
+      "description": "Schedule a free 15-minute consultation via Google Meet or Zoom to define your system requirements, technical scope, and exact pricing before committing.",
+      "cta": "Connect on LinkedIn"
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -120,7 +143,7 @@
       },
       {
         "question": "Can the scope and budget be negotiated based on project needs?",
-        "answer": "Yes. Every system has unique complexities. Pricing and scope are flexible and fully adaptable to your project's specific requirements, features, and budget."
+        "answer": "Yes. Every system has unique complexities. Base package prices serve as starting rates. Scope and final investment are tailored based on custom features, add-ons, and technical requirements."
       }
     ]
   }
