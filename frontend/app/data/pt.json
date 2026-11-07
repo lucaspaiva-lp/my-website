@@ -39,16 +39,33 @@
   },
   "pricing": {
     "title": "Serviços & Investimento",
-    "subtitle": "Pacotes sob medida para prototipagem, aplicações full-stack e sistemas personalizados.",
+    "subtitle": "Valores base de entrada para prototipagem de MVP, aplicações full-stack e engenharia de software sob medida.",
     "popularTag": "Mais Popular",
+    "startingAt": "A partir de",
     "orderBtn": "Solicitar Orçamento",
+    "addonsTitle": "Serviços Opcionais & Adendos",
+    "addonsSubtitle": "Serviços adicionais contratáveis à parte para complementar o pacote base:",
+    "addons": [
+      {
+        "title": "Treinamento de Equipe & Handover",
+        "description": "Sessões guiadas de alinhamento técnico, capacitação operacional e revisão de documentação para seu time interno."
+      },
+      {
+        "title": "Manutenção a Longo Prazo & SLA",
+        "description": "Suporte pós-lançamento dedicado, aplicação de patches de segurança, monitoramento de infraestrutura e evolução contínua."
+      },
+      {
+        "title": "Licenciamento & Transferência de IP",
+        "description": "Transferência integral de propriedade intelectual, termos de uso comercial e contratos customizados de licença de software."
+      }
+    ],
     "plans": [
       {
         "name": "Basic",
         "tagline": "Protótipo Web & API Simples",
         "price": "R$ 250",
         "currency": "BRL",
-        "delivery": "Entrega em 2 dias",
+        "delivery": "Est. 2 dias úteis",
         "revisions": "2 revisões incluídas",
         "features": [
           "1 Endpoint API ou script simples em Python",
@@ -62,7 +79,7 @@
         "tagline": "Aplicação Web Full-Stack",
         "price": "R$ 800",
         "currency": "BRL",
-        "delivery": "Entrega em 4 dias",
+        "delivery": "Est. 4 dias úteis",
         "revisions": "3 revisões incluídas",
         "popular": true,
         "features": [
@@ -78,7 +95,7 @@
         "tagline": "Sistema Personalizado Escalável",
         "price": "R$ 1.800",
         "currency": "BRL",
-        "delivery": "Entrega em 7 dias",
+        "delivery": "Est. 7 dias úteis",
         "revisions": "5 revisões incluídas",
         "features": [
           "Sistema full-stack sob medida completo",
@@ -88,7 +105,13 @@
           "Suporte de deploy para nuvem (AWS/DigitalOcean)"
         ]
       }
-    ]
+    ],
+    "consultation": {
+      "badge": "Consultoria Gratuita",
+      "title": "Em dúvida sobre escopo ou investimento exato?",
+      "description": "Podemos marcar uma reunião rápida de 15 a 20 minutos via Google Meet ou Zoom para alinhar os requisitos do sistema, escopo técnico e orçamento exato antes de fechar qualquer contrato.",
+      "cta": "Chamar no LinkedIn"
+    }
   },
   "faq": {
     "title": "Perguntas Frequentes",
@@ -120,7 +143,7 @@
       },
       {
         "question": "O escopo e o orçamento podem ser negociados?",
-        "answer": "Sim. Cada projeto possui complexidades únicas. O escopo e o investimento são flexíveis e totalmente adaptáveis às necessidades específicas, funcionalidades e orçamento da sua demanda."
+        "answer": "Sim. Cada projeto possui complexidades únicas. Os valores dos pacotes representam o investimento mínimo (a partir de). O escopo e o investimento final são adaptados conforme funcionalidades sob medida, adendos técnicos e requisitos da sua demanda."
       }
     ]
   }
