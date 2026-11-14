@@ -51,11 +51,11 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
   }
 
   return (
-    <div className="p-5 bg-zinc-900/30 border border-zinc-900 rounded-xl flex flex-col gap-4">
+    <div className="p-5 bg-white dark:bg-zinc-900/30 border border-[#DDD9D0] dark:border-zinc-900 rounded-xl flex flex-col gap-4 shadow-sm transition-colors duration-200">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div className="flex items-center gap-2 text-zinc-400">
-          <FaGithub size={16} />
-          <h3 className="text-sm font-semibold tracking-tight text-zinc-200">
+        <div className="flex items-center gap-2 text-[#6B6864] dark:text-zinc-400">
+          <FaGithub size={16} className="text-[#1E1C1D] dark:text-inherit" />
+          <h3 className="text-sm font-semibold tracking-tight text-[#1E1C1D] dark:text-zinc-200">
             {totalCommits.toLocaleString(t.graph.locale)} {t.graph.suffix}
           </h3>
         </div>
@@ -63,14 +63,14 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
           href="https://github.com/lucaspaiva-lp" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="text-[11px] font-mono text-zinc-500 hover:text-zinc-300 transition"
+          className="text-[11px] font-mono text-[#81807C] dark:text-zinc-500 hover:text-[#1E1C1D] dark:hover:text-zinc-300 transition"
         >
           @lucaspaiva-lp
         </a>
       </div>
 
-      <div className="w-full overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-zinc-800">
-        <div className="min-w-[620px] flex flex-col gap-1 text-[10px] font-mono text-zinc-600 select-none">
+      <div className="w-full overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-[#DDD9D0] dark:scrollbar-thumb-zinc-800">
+        <div className="min-w-[620px] flex flex-col gap-1 text-[10px] font-mono text-[#81807C] dark:text-zinc-600 select-none">
           
           <div className="flex pl-7 mb-1 justify-between pr-4">
             {months.map((month, idx) => (
@@ -88,11 +88,11 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
             <div className="flex-1 grid grid-flow-col grid-rows-7 gap-[3px] h-[84px]">
               {contributionGrid.slice(0, 371).map((level, i) => {
                 const bgColors = [
-                  "bg-zinc-900 border border-zinc-950",        
-                  "bg-emerald-900/60 border border-transparent", 
-                  "bg-emerald-700/70 border border-transparent", 
-                  "bg-emerald-500/80 border border-transparent", 
-                  "bg-emerald-400 border border-transparent"     
+                  "bg-[#ECE8E1] dark:bg-zinc-900 border border-[#DDD9D0] dark:border-zinc-950",        
+                  "bg-[#B8B4AC] dark:bg-emerald-900/60 border border-transparent", 
+                  "bg-[#8A867E] dark:bg-emerald-700/70 border border-transparent", 
+                  "bg-[#4D4A46] dark:bg-emerald-500/80 border border-transparent", 
+                  "bg-[#1E1C1D] dark:bg-emerald-400 border border-transparent"     
                 ];
 
                 return (
@@ -105,13 +105,13 @@ export default function ContributionGraph({ githubData }: { githubData?: GithubD
             </div>
           </div>
           
-          <div className="flex justify-end items-center gap-1.5 mt-2 text-[11px] pr-2">
+          <div className="flex justify-end items-center gap-1.5 mt-2 text-[11px] pr-2 text-[#81807C] dark:text-zinc-600">
             <span>{t.graph.less}</span>
-            <div className="w-[10px] h-[10px] rounded-[2px] bg-zinc-900 border border-zinc-950" />
-            <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-900/60" />
-            <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-700/70" />
-            <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-500/80" />
-            <div className="w-[10px] h-[10px] rounded-[2px] bg-emerald-400" />
+            <div className="w-[10px] h-[10px] rounded-[2px] bg-[#ECE8E1] dark:bg-zinc-900 border border-[#DDD9D0] dark:border-zinc-950" />
+            <div className="w-[10px] h-[10px] rounded-[2px] bg-[#B8B4AC] dark:bg-emerald-900/60" />
+            <div className="w-[10px] h-[10px] rounded-[2px] bg-[#8A867E] dark:bg-emerald-700/70" />
+            <div className="w-[10px] h-[10px] rounded-[2px] bg-[#4D4A46] dark:bg-emerald-500/80" />
+            <div className="w-[10px] h-[10px] rounded-[2px] bg-[#1E1C1D] dark:bg-emerald-400" />
             <span>{t.graph.more}</span>
           </div>
 

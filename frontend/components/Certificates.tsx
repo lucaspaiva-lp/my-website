@@ -60,33 +60,33 @@ export default function Certificates() {
   const activeCert = certificates.find((cert) => cert.id === activeTab) || certificates[0];
 
   return (
-    <div className="w-full bg-zinc-900/30 border border-zinc-900 rounded-xl p-6 my-2 font-sans">
+    <div className="w-full bg-white dark:bg-zinc-900/30 border border-[#DDD9D0] dark:border-zinc-900 rounded-xl p-6 my-2 font-sans shadow-sm transition-colors duration-200">
       
       {/* Header */}
-      <div className="flex justify-between items-center mb-4 border-b border-zinc-900 pb-2">
-        <h2 className="text-xl font-semibold text-zinc-100">
+      <div className="flex justify-between items-center mb-4 border-b border-[#DDD9D0] dark:border-zinc-900 pb-2">
+        <h2 className="text-xl font-semibold text-[#1E1C1D] dark:text-zinc-100">
           {t.certificates.title}
         </h2>
         <a
           href="https://github.com/lucaspaiva-lp/professional-certifications/tree/main"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors font-medium flex items-center gap-1"
+          className="text-xs text-[#6B6864] dark:text-zinc-400 hover:text-[#1E1C1D] dark:hover:text-zinc-200 transition-colors font-medium flex items-center gap-1"
         >
           {t.certificates.viewAllOnGithub}
         </a>
       </div>
 
       {/* Tabs Selector */}
-      <div className="flex border-b border-zinc-900 overflow-x-auto gap-2 mb-6">
+      <div className="flex border-b border-[#DDD9D0] dark:border-zinc-900 overflow-x-auto gap-2 mb-6">
         {certificates.map((cert) => (
           <button
             key={cert.id}
             onClick={() => setActiveTab(cert.id)}
             className={`px-4 py-2 text-sm font-medium transition-colors whitespace-nowrap -mb-px border-b-2 ${
               activeTab === cert.id
-                ? "border-b-2 border-zinc-200 text-zinc-100"
-                : "border-transparent text-zinc-500 hover:text-zinc-300"
+                ? "border-b-2 border-[#1E1C1D] dark:border-zinc-200 text-[#1E1C1D] dark:text-zinc-100 font-semibold"
+                : "border-transparent text-[#81807C] dark:text-zinc-500 hover:text-[#1E1C1D] dark:hover:text-zinc-300"
             }`}
           >
             {cert.tabTitle}
@@ -97,7 +97,7 @@ export default function Certificates() {
       {/* Certificate Viewer Content */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
         {/* Preview Image */}
-        <div className="md:col-span-7 flex justify-center bg-zinc-950 p-4 rounded-lg border border-zinc-900 relative min-h-[300px]">
+        <div className="md:col-span-7 flex justify-center bg-[#F4F3EF] dark:bg-zinc-950 p-4 rounded-lg border border-[#DDD9D0] dark:border-zinc-900 relative min-h-[300px]">
           <div className="relative w-full h-[350px]">
             <Image
               src={activeCert.imagePath}
@@ -112,13 +112,13 @@ export default function Certificates() {
         {/* Info & CTA */}
         <div className="md:col-span-5 flex flex-col justify-center space-y-4">
           <div>
-            <span className="text-xs font-mono uppercase tracking-wider text-zinc-500">
+            <span className="text-xs font-mono uppercase tracking-wider text-[#81807C] dark:text-zinc-500">
               {activeCert.issuer}
             </span>
-            <h3 className="text-lg font-bold text-zinc-100 mt-1 leading-snug">
+            <h3 className="text-lg font-bold text-[#1E1C1D] dark:text-zinc-100 mt-1 leading-snug">
               {activeCert.title}
             </h3>
-            <p className="text-sm text-zinc-400 mt-1">
+            <p className="text-sm text-[#6B6864] dark:text-zinc-400 mt-1">
               {t.certificates.completedIn} {activeCert.year}
             </p>
           </div>
@@ -128,7 +128,7 @@ export default function Certificates() {
               href={activeCert.pdfPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-3 py-1.5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-lg text-xs font-medium text-zinc-300 transition"
+              className="inline-flex items-center justify-center px-3 py-1.5 bg-[#1E1C1D] dark:bg-zinc-900 hover:bg-[#383536] dark:hover:bg-zinc-800 border border-[#1E1C1D] dark:border-zinc-800 rounded-lg text-xs font-medium text-[#F4F3EF] dark:text-zinc-300 transition shadow-sm"
             >
               {t.certificates.viewOriginalPdf}
             </a>
