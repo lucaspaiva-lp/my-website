@@ -61,6 +61,20 @@
     ],
     "plans": [
       {
+        "name": "Consultoria de T.I.",
+        "tagline": "Diagnóstico Técnico, Infraestrutura & Arquitetura",
+        "price": "R$ 150",
+        "currency": "BRL / hora",
+        "delivery": "Agendamento sob demanda",
+        "revisions": "Relatório técnico incluso",
+        "features": [
+          "Auditoria de infraestrutura, redes e segurança",
+          "Arquitetura de software, Linux, Docker e Cloud",
+          "Planejamento de sistemas, bancos de dados e APIs",
+          "Plano de ação prático sem ambiguidade"
+        ]
+      },
+      {
         "name": "Basic",
         "tagline": "Protótipo Web & API Simples",
         "price": "R$ 250",

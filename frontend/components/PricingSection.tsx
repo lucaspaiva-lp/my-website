@@ -1,13 +1,43 @@
 'use client';
 
+import { useRef, useState, useEffect } from 'react';
 import { useLanguage } from '../app/data/LanguageContext';
-import { DollarSign, Check, Clock, RefreshCw, Mail, ExternalLink, ShieldCheck, Wrench, Users } from 'lucide-react';
+import {
+  DollarSign,
+  Check,
+  Clock,
+  RefreshCw,
+  Mail,
+  ExternalLink,
+  ShieldCheck,
+  Wrench,
+  Users,
+  ChevronLeft,
+  ChevronRight
+} from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
+
+interface PricingPlan {
+  name: string;
+  tagline: string;
+  price: string;
+  currency: string;
+  delivery: string;
+  revisions: string;
+  popular?: boolean;
+  features: string[];
+}
+
+interface PricingAddon {
+  title: string;
+  description: string;
+}
 
 export default function PricingSection() {
   const { t, language } = useLanguage();
-
-  if (!t.pricing) return null;
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   // URL do seu Gig no Fiverr
   const FIVERR_GIG_URL = "https://www.fiverr.com/lucaspaiva_lp";
@@ -22,6 +52,44 @@ export default function PricingSection() {
     <ShieldCheck key="shield" size={16} className="text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
   ];
 
+  // Gerenciamento do estado dos botões de scroll
+  const checkScroll = () => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      setCanScrollLeft(scrollLeft > 5);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 5);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    const el = carouselRef.current;
+    if (el) {
+      el.addEventListener('scroll', checkScroll, { passive: true });
+      window.addEventListener('resize', checkScroll);
+      return () => {
+        el.removeEventListener('scroll', checkScroll);
+        window.removeEventListener('resize', checkScroll);
+      };
+    }
+  }, [t.pricing?.plans]);
+
+  const scrollPrev = () => {
+    if (carouselRef.current) {
+      const card = carouselRef.current.firstElementChild as HTMLElement;
+      const scrollAmount = card ? card.offsetWidth + 16 : 300;
+      carouselRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  const scrollNext = () => {
+    if (carouselRef.current) {
+      const card = carouselRef.current.firstElementChild as HTMLElement;
+      const scrollAmount = card ? card.offsetWidth + 16 : 300;
+      carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   // Gerador de link de e-mail com assunto e template do corpo preenchidos
   const getMailtoLink = (planName: string) => {
     const email = "lucaspaivasanto21@gmail.com";
@@ -33,21 +101,53 @@ export default function PricingSection() {
     return `mailto:${email}?subject=${subject}&body=${body}`;
   };
 
+  if (!t.pricing) return null;
+
   return (
     <section id="pricing" className="flex flex-col gap-4">
-      <div className="flex items-center gap-2 text-[#6B6864] dark:text-zinc-400">
-        <DollarSign size={18} />
-        <h2 className="text-sm font-semibold tracking-wider uppercase text-[#1E1C1D] dark:text-zinc-400">{t.pricing.title}</h2>
+      {/* Cabeçalho com Título e Controles de Navegação do Carrossel */}
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2 text-[#6B6864] dark:text-zinc-400">
+          <DollarSign size={18} />
+          <h2 className="text-sm font-semibold tracking-wider uppercase text-[#1E1C1D] dark:text-zinc-400">
+            {t.pricing.title}
+          </h2>
+        </div>
+
+        {/* Setas de Navegação */}
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={scrollPrev}
+            disabled={!canScrollLeft}
+            aria-label="Plano anterior"
+            className="p-1.5 rounded-lg border border-[#DDD9D0] dark:border-zinc-800 bg-white dark:bg-zinc-900/60 text-[#1E1C1D] dark:text-zinc-300 hover:bg-[#F4F3EF] dark:hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition shadow-sm cursor-pointer"
+          >
+            <ChevronLeft size={16} />
+          </button>
+          <button
+            type="button"
+            onClick={scrollNext}
+            disabled={!canScrollRight}
+            aria-label="Próximo plano"
+            className="p-1.5 rounded-lg border border-[#DDD9D0] dark:border-zinc-800 bg-white dark:bg-zinc-900/60 text-[#1E1C1D] dark:text-zinc-300 hover:bg-[#F4F3EF] dark:hover:bg-zinc-800 disabled:opacity-30 disabled:cursor-not-allowed transition shadow-sm cursor-pointer"
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
       </div>
 
       <p className="-mt-2 text-xs text-[#6B6864] dark:text-zinc-400">{t.pricing.subtitle}</p>
 
-      {/* Grid de Planos */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
-        {t.pricing.plans.map((plan: any, idx: number) => (
+      {/* Carrossel Horizontal de Planos */}
+      <div
+        ref={carouselRef}
+        className="flex gap-4 pt-3 pb-2 -mt-3 -mb-2 overflow-x-auto scroll-smooth snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+      >
+        {t.pricing.plans.map((plan: PricingPlan, idx: number) => (
           <div
             key={idx}
-            className={`rounded-xl border p-5 flex flex-col justify-between relative transition-all shadow-sm ${
+            className={`w-full min-w-full md:w-[calc((100%-2rem)/3)] md:min-w-[calc((100%-2rem)/3)] md:max-w-[calc((100%-2rem)/3)] shrink-0 snap-start rounded-xl border p-5 flex flex-col justify-between relative transition-all shadow-sm ${
               plan.popular
                 ? 'border-[#1E1C1D] dark:border-zinc-700 bg-white dark:bg-zinc-900/60 shadow-md dark:shadow-black/50'
                 : 'border-[#DDD9D0] dark:border-zinc-900 bg-white dark:bg-zinc-900/20 hover:border-[#1E1C1D] dark:hover:border-zinc-800'
@@ -140,7 +240,7 @@ export default function PricingSection() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {t.pricing.addons.map((addon: any, aIdx: number) => (
+            {t.pricing.addons.map((addon: PricingAddon, aIdx: number) => (
               <div key={aIdx} className="flex items-start gap-3 p-3 rounded-lg bg-[#F4F3EF] dark:bg-zinc-900/30 border border-[#DDD9D0] dark:border-zinc-900">
                 {addonIcons[aIdx % addonIcons.length]}
                 <div>

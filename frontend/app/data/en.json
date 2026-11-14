@@ -61,6 +61,20 @@
     ],
     "plans": [
       {
+        "name": "IT Consulting",
+        "tagline": "Technical Diagnosis, Infrastructure & Architecture",
+        "price": "$30",
+        "currency": "USD / hour",
+        "delivery": "On-demand scheduling",
+        "revisions": "Technical report included",
+        "features": [
+          "Infrastructure, network, and security auditing",
+          "Software architecture, Linux, Docker, and Cloud",
+          "System design, database, and API planning",
+          "Clear, actionable technical roadmap"
+        ]
+      },
+      {
         "name": "Basic",
         "tagline": "Web Prototype & Simple API",
         "price": "$40",
