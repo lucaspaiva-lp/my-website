@@ -3,6 +3,7 @@
 import ProfileSidebar from "./ProfileSidebar";
 import ProjectCard from "./ProjectCard";
 import Certificates from "./Certificates";
+import AwardsSection from "./AwardsSection";
 import FaqSection from "./FaqSection";
 import PricingSection from "./PricingSection";
 import { getProjectsData } from "../app/data/projects";
@@ -79,6 +80,9 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
               {t.certificationsBtn}
             </a>
           </div>
+
+          {/* ─── RECONHECIMENTOS & PRÊMIOS ─── */}
+          <AwardsSection />
 
           {/* ─── SEÇÃO DE PRECIFICAÇÃO E SERVIÇOS ─── */}
           <PricingSection />

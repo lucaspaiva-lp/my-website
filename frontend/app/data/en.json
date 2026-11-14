@@ -160,5 +160,43 @@
         "answer": "Yes. Every system has unique complexities. Base package prices serve as starting rates. Scope and final investment are tailored based on custom features, add-ons, and technical requirements."
       }
     ]
+  },
+
+  "awards": {
+    "title": "Honors & Awards",
+    "subtitle": "Academic honors, professional milestones, and LinkedIn verified recognitions.",
+    "verifyLabel": "Verify on LinkedIn",
+    "items": [
+      {
+        "title": "Official Appointment: IT Coordinator",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania – Prefeitura de Aracaju",
+        "date": "Jun 2026",
+        "decree": "Decree No. 6876/2026 (CCE-01)",
+        "edition": "Official Gazette of the Municipality of Aracaju (Edition No. 6876)",
+        "code": "Verification Code: 5878",
+        "scope": "Official appointment published on June 9, 2026, formalizing the appointment to the executive position of IT Coordinator (CCE-01) within SSM/AJU-CETI. Responsibilities include executive leadership in technology management, information security, and infrastructure modernization across the Secretariat, PROCON, Municipal Guard, and Military Draft Board.",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      },
+      {
+        "title": "Sectoral Data Protection Officer – LGPD",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania - SSM (Prefeitura de Aracaju)",
+        "date": "Jul 2026",
+        "decree": "Portaria No. 059/2026",
+        "edition": "Official Gazette of the Municipality of Aracaju (Edition No. 5891)",
+        "code": "Access Key: 7035-D2DD-162F",
+        "scope": "Official appointment published on July 9, 2026, pursuant to Portaria No. 059/2026. Designated as the Sectoral Data Protection Officer under Federal Law No. 13.709/2018 (LGPD) and Municipal Decree No. 6.894/2022.",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      },
+      {
+        "title": "Contract Manager – Municipal Integrated Network",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania - SSM (Prefeitura de Aracaju)",
+        "date": "Oct 2026",
+        "decree": "Portaria No. 070/2026-SSM/AJU",
+        "edition": "Official Gazette of the Municipality of Aracaju (Edition No. 5960)",
+        "code": "Verification Code: 002C-02DE-7622-6AD4",
+        "scope": "Official public appointment published on October 16, 2026, pursuant to Portaria No. 070/2026-SSM/AJU. Designated as Contract Manager for Contract No. 0011/2026 under Law No. 14.133/2021 (Public Procurement Law), covering IT Procurement, Contract Management, and Technical Compliance for the Municipal Integrated Network (RIMA).",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      }
+    ]
   }
 }

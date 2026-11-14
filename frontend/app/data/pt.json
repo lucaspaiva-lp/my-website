@@ -160,5 +160,42 @@
         "answer": "Sim. Cada projeto possui complexidades únicas. Os valores dos pacotes representam o investimento mínimo (a partir de). O escopo e o investimento final são adaptados conforme funcionalidades sob medida, adendos técnicos e requisitos da sua demanda."
       }
     ]
+  },
+  "awards": {
+    "title": "Reconhecimentos & Prêmios",
+    "subtitle": "Destaques acadêmicos, profissionais e reconhecimentos verificados no LinkedIn.",
+    "verifyLabel": "Verificar no LinkedIn",
+    "items": [
+      {
+        "title": "Nomeação Oficial: Coordenador de TI",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania – Prefeitura de Aracaju",
+        "date": "Jun 2026",
+        "decree": "Decreto nº 6876/2026 (CCE-01)",
+        "edition": "Diário Oficial do Município de Aracaju (Ed. nº 6876)",
+        "code": "Código de Verificação: 5878",
+        "scope": "Nomeação formalizada em 9 de junho de 2026 ao cargo de Coordenador Executivo de Tecnologia da Informação (CCE-01) da SSM/AJU-CETI. Responsável pela liderança executiva em gestão tecnológica, segurança da informação e modernização da infraestrutura da Secretaria Headquarters, PROCON, Guarda Municipal e Junta Militar.",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      },
+      {
+        "title": "Encarregado Setorial de Proteção de Dados – LGPD",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania - SSM (Prefeitura de Aracaju)",
+        "date": "Jul 2026",
+        "decree": "Portaria nº 059/2026",
+        "edition": "Diário Oficial do Município de Aracaju (Ed. nº 5891)",
+        "code": "Código de Acesso: 7035-D2DD-162F",
+        "scope": "Nomeação publicada em 9 de julho de 2026, conforme Portaria nº 059/2026. Designado como Encarregado Setorial pelo Tratamento de Dados Pessoais nos termos da Lei Federal nº 13.709/2018 (LGPD) e Decreto Municipal nº 6.894/2022.",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      },
+      {
+        "title": "Gestor de Contrato – Rede Integrada Municipal",
+        "issuer": "Secretaria Municipal da Segurança e Cidadania - SSM (Prefeitura de Aracaju)",
+        "date": "Out 2026",
+        "decree": "Portaria nº 070/2026-SSM/AJU",
+        "edition": "Diário Oficial do Município de Aracaju (Ed. nº 5960)",
+        "code": "Código de Verificação: 002C-02DE-7622-6AD4",
+        "scope": "Nomeação publicada em 16 de outubro de 2026, conforme Portaria nº 070/2026-SSM/AJU. Designado como Gestor do Contrato nº 0011/2026 ao amparo da Lei nº 14.133/2021 (Lei de Licitações e Contratos), com escopo de gestão de TI, Procurement e Conformidade Técnica da Rede Integrada Municipal (RIMA).",
+        "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
+      }
+    ]
   }
 }
