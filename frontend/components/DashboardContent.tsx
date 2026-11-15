@@ -93,7 +93,7 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
           {/* Footer */}
           <footer className="mt-4 pt-6 border-t border-[#DDD9D0] dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-[#81807C] dark:text-zinc-600">
             <span>{t.footerDevelopedBy}</span>
-            <span className="font-mono text-[10px] text-[#9E9B95] dark:text-zinc-600">v1.0.5</span>
+            <span className="font-mono text-[10px] text-[#9E9B95] dark:text-zinc-600"></span>
           </footer>
         </section>
 
