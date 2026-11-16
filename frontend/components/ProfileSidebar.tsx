@@ -21,6 +21,11 @@ export default function ProfileSidebar() {
       <h1 className="text-xl font-bold text-[#1E1C1D] dark:text-zinc-100 tracking-tight">Lucas Paiva</h1>
       <p className="text-sm text-[#6B6864] dark:text-zinc-400 mt-2 font-medium">{t.sidebar.role}</p>
       
+      <div className="mt-2.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EBE7DF]/80 dark:bg-zinc-800/80 border border-[#DDD9D0] dark:border-zinc-700/60 text-[11px] font-medium text-[#1E1C1D] dark:text-zinc-300">
+        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+        <span>{t.sidebar.pjBadge}</span>
+      </div>
+
       <p className="text-xs text-[#81807C] dark:text-zinc-500 mt-3 max-w-xs leading-relaxed">
         {t.sidebar.bio}
       </p>

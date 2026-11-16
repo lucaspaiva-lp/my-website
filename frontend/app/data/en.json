@@ -6,8 +6,11 @@
   "certificationsSub": "Validation history in software engineering and backend development.",
   "certificationsBtn": "Access Repository",
   "footerDevelopedBy": "Developed by lucaspaiva-lp.",
+  "footerCnpj": "Tax ID / CNPJ: 70.178.625/0001-19",
+  "footerB2b": "Official Tax Invoicing • Corporate & B2B Contracting",
   "sidebar": {
     "role": "Software Engineer",
+    "pjBadge": "Available for B2B & Corporate (PJ)",
     "bio": "Software Engineer focused on end-to-end architecture, scalable backend systems, and data-driven solutions with Python.",
     "contactNote": "Feel free to reach out via email or LinkedIn for collaborations or questions.",
     "resumeBtn": "Resume",
@@ -125,12 +128,22 @@
       "title": "Not sure about your scope or budget?",
       "description": "Schedule a free 15-minute consultation via Google Meet or Zoom to define your system requirements, technical scope, and exact pricing before committing.",
       "cta": "Connect on LinkedIn"
+    },
+    "b2b": {
+      "badge": "Corporate Contracting (B2B)",
+      "title": "Corporate Invoicing & Service Agreements",
+      "description": "Formal business engagement with official tax invoicing (NF-e), service level agreements (SLA), and mutual non-disclosure agreements (NDA).",
+      "cnpj": "CNPJ / Tax ID: 70.178.625/0001-19"
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Common questions about services, payment methods, workflow, and delivery.",
     "items": [
+      {
+        "question": "Do you offer B2B / corporate contracting and official tax invoicing?",
+        "answer": "Yes! All projects can be officially contracted under a B2B arrangement (Brazilian CNPJ: 70.178.625/0001-19). I provide official service tax invoices (NFS-e), formal service agreements, and mutual non-disclosure agreements (NDA)."
+      },
       {
         "question": "What payment methods do you accept and how does the process work?",
         "answer": "I accept payments via Wise and Nomad (US bank account), ideal for international transfers with lower fees, as well as Pix for clients based in Brazil. The workflow strictly follows a PRD (Product Requirement Document) defined before starting. To ensure security for both parties, I offer three payment models:\n\n1. 50% upfront deposit and 50% upon final delivery.\n2. Payment per Sprint (e.g., if the roadmap has 8 sprints, the total amount is split proportionally across each milestone).\n3. Full upfront payment.\n\nDevelopment includes periodic alignment meetings (weekly or bi-weekly) to review each sprint's progress. Please note that access tokens and production credentials are only delivered upon project completion for mutual safety."

@@ -91,9 +91,21 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
           <FaqSection />
 
           {/* Footer */}
-          <footer className="mt-4 pt-6 border-t border-[#DDD9D0] dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-[#81807C] dark:text-zinc-600">
-            <span>{t.footerDevelopedBy}</span>
-            <span className="font-mono text-[10px] text-[#9E9B95] dark:text-zinc-600"></span>
+          <footer className="mt-4 pt-6 border-t border-[#DDD9D0] dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-[#81807C] dark:text-zinc-500">
+            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-center sm:text-left">
+              <span>{t.footerDevelopedBy}</span>
+              <span className="hidden sm:inline text-[#DDD9D0] dark:text-zinc-700">•</span>
+              <span className="font-mono text-[11px] text-[#1E1C1D] dark:text-zinc-300 font-medium">
+                {t.footerCnpj}
+              </span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <span className="text-[11px] text-[#6B6864] dark:text-zinc-400">
+                {t.footerB2b}
+              </span>
+              <span className="text-[#DDD9D0] dark:text-zinc-700">•</span>
+              <span className="font-mono text-[10px] text-[#9E9B95] dark:text-zinc-600">v1.0.5</span>
+            </div>
           </footer>
         </section>
 
