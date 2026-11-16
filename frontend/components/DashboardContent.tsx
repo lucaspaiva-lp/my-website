@@ -9,7 +9,7 @@ import PricingSection from "./PricingSection";
 import { getProjectsData } from "../app/data/projects";
 import { useLanguage } from "../app/data/LanguageContext";
 import { LanguageToggle } from "../app/data/LanguageToggle";
-import { Code2, Award } from "lucide-react";
+import { Code2, Award, Lock } from "lucide-react";
 
 export default function DashboardContent({ githubData }: { githubData: any }) {
   const { t } = useLanguage();
@@ -56,6 +56,14 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
               {translatedProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
+            </div>
+
+            {/* Disclaimer Note */}
+            <div className="mt-6 flex items-start gap-2 text-xs text-neutral-500 dark:text-zinc-400">
+              <Lock size={14} className="shrink-0 mt-0.5 text-neutral-500 dark:text-zinc-400" />
+              <p className="leading-relaxed">
+                {t.projectsDisclaimer}
+              </p>
             </div>
           </div>
 

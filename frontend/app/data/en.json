@@ -2,6 +2,7 @@
   "techStackTitle": "Technologies & Core Stack",
   "featuredProjectsTitle": "Featured Projects",
   "featuredProjectsSub": "Applications, microservices, and data engineering.",
+  "projectsDisclaimer": "A curated selection of public and open-source projects. Institutional, government, and proprietary corporate systems are omitted from this portfolio due to Non-Disclosure Agreements (NDAs) and strict confidentiality policies.",
   "certificationsTitle": "Technical Certifications",
   "certificationsSub": "Validation history in software engineering and backend development.",
   "certificationsBtn": "Access Repository",
