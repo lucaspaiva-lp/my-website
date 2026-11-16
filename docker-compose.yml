@@ -4,7 +4,6 @@ services:
     container_name: website
     ports:
       - "3000:3000"
-    # Comente as 3 linhas de volumes abaixo para o Docker não tentar ler a rede em tempo real:
     # volumes:
     #   - ./frontend:/app
     #   - /app/.next

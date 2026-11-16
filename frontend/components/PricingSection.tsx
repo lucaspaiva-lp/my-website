@@ -13,7 +13,8 @@ import {
   Wrench,
   Users,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Building2
 } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 
@@ -281,6 +282,38 @@ export default function PricingSection() {
               <FaLinkedin size={16} className="text-[#F4F3EF] dark:text-blue-600" />
               <span>{t.pricing.consultation.cta}</span>
             </a>
+          </div>
+        </div>
+      )}
+
+      {/* Banner de Atendimento B2B & PJ */}
+      {t.pricing.b2b && (
+        <div className="mt-2 rounded-xl border border-[#DDD9D0] dark:border-zinc-800 bg-white dark:bg-zinc-900/40 p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+          <div className="flex items-start gap-3.5 max-w-xl">
+            <div className="p-2.5 rounded-lg bg-[#F4F3EF] dark:bg-zinc-800 text-[#1E1C1D] dark:text-zinc-200 border border-[#DDD9D0] dark:border-zinc-700/60 shrink-0">
+              <Building2 size={20} />
+            </div>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-[#ECE8E1] dark:bg-zinc-800 text-[#1E1C1D] dark:text-zinc-300 border border-[#DDD9D0] dark:border-zinc-700">
+                  {t.pricing.b2b.badge}
+                </span>
+                <span className="font-mono text-xs font-semibold text-[#1E1C1D] dark:text-zinc-200">
+                  {t.pricing.b2b.cnpj}
+                </span>
+              </div>
+              <h3 className="text-sm font-bold text-[#1E1C1D] dark:text-zinc-100 mt-0.5">
+                {t.pricing.b2b.title}
+              </h3>
+              <p className="text-xs text-[#6B6864] dark:text-zinc-400 leading-relaxed">
+                {t.pricing.b2b.description}
+              </p>
+            </div>
+          </div>
+          <div className="shrink-0 self-stretch sm:self-auto flex items-center">
+            <span className="px-3 py-1.5 rounded-md text-[11px] font-medium bg-[#F4F3EF] dark:bg-zinc-800/80 text-[#6B6864] dark:text-zinc-300 border border-[#DDD9D0] dark:border-zinc-700/60 text-center w-full sm:w-auto">
+              {(language as string).startsWith('pt') ? 'Nota Fiscal (NF-e) • Contrato SLA' : 'Official Invoicing • SLA'}
+            </span>
           </div>
         </div>
       )}

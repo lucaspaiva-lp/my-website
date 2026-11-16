@@ -6,8 +6,11 @@
   "certificationsSub": "Histórico de validação em engenharia de software e desenvolvimento backend.",
   "certificationsBtn": "Acessar Repositório",
   "footerDevelopedBy": "Desenvolvido por lucaspaiva-lp.",
+  "footerCnpj": "CNPJ: 70.178.625/0001-19",
+  "footerB2b": "Emissão de Nota Fiscal (NF-e) • Atendimento PJ & B2B",
   "sidebar": {
     "role": "Engenheiro de Software",
+    "pjBadge": "Atendimento PJ & B2B (CNPJ)",
     "bio": "Engenheiro de Software focado em arquitetura de ponta a ponta, sistemas de backend escaláveis e soluções orientadas a dados com Python.",
     "contactNote": "Sinta-se à vontade para entrar em contato via e-mail ou LinkedIn para colaborações ou dúvidas.",
     "resumeBtn": "Currículo",
@@ -125,12 +128,22 @@
       "title": "Em dúvida sobre escopo ou investimento exato?",
       "description": "Podemos marcar uma reunião rápida de 15 a 20 minutos via Google Meet ou Zoom para alinhar os requisitos do sistema, escopo técnico e orçamento exato antes de fechar qualquer contrato.",
       "cta": "Chamar no LinkedIn"
+    },
+    "b2b": {
+      "badge": "Pessoa Jurídica (PJ)",
+      "title": "Faturamento Corporativo & Contratos B2B",
+      "description": "Atendimento formal com emissão de Nota Fiscal (NF-e de serviços), contrato de prestação de serviços com SLA e acordo de confidencialidade (NDA).",
+      "cnpj": "CNPJ: 70.178.625/0001-19"
     }
   },
   "faq": {
     "title": "Perguntas Frequentes",
     "subtitle": "Dúvidas comuns sobre serviços, formas de pagamento, fluxo de trabalho e entrega.",
     "items": [
+      {
+        "question": "Você atende como Pessoa Jurídica (PJ) e emite Nota Fiscal?",
+        "answer": "Sim! Todos os serviços podem ser faturados via PJ através do CNPJ 70.178.625/0001-19. Forneço emissão de Nota Fiscal eletrônica de serviços (NFS-e), elaboração de contrato de prestação de serviços e acordo de confidencialidade (NDA) para empresas de qualquer porte."
+      },
       {
         "question": "Quais são as formas de pagamento e como funciona o processo de trabalho?",
         "answer": "Aceito pagamentos via Pix para clientes no Brasil, além de Wise e Nomad para transações internacionais. O processo segue estritamente um PRD (Product Requirement Document) alinhado no início. Para garantia de ambas as partes, ofereço três modalidades de pagamento:\n\n1. 50% de entrada e 50% na entrega final do projeto.\n2. Pagamento por Sprints (ex: se o roadmap tiver 8 sprints, o valor total é dividido proporcionalmente a cada entrega).\n3. Pagamento integral antecipado.\n\nO desenvolvimento conta com reuniões periódicas (semanais ou quinzenais) para validação das entregas de cada sprint. Vale ressaltar que os tokens e credenciais finais são entregues apenas ao término do projeto, garantindo a segurança de ambas as partes."
