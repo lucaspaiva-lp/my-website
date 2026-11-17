@@ -6,8 +6,8 @@
   "certificationsTitle": "Technical Certifications",
   "certificationsSub": "Validation history in software engineering and backend development.",
   "certificationsBtn": "Access Repository",
-  "footerDevelopedBy": "Developed by lucaspaiva-lp.",
-  "footerCnpj": "Tax ID / CNPJ: 70.178.625/0001-19",
+  "footerDevelopedBy": "",
+  "footerCnpj": "Tax ID / CNPJ: 70.128.625/0001-19",
   "footerB2b": "Official Tax Invoicing • Corporate & B2B Contracting",
   "sidebar": {
     "role": "Software Engineer",
@@ -172,6 +172,10 @@
       {
         "question": "Can the scope and budget be negotiated based on project needs?",
         "answer": "Yes. Every system has unique complexities. Base package prices serve as starting rates. Scope and final investment are tailored based on custom features, add-ons, and technical requirements."
+      },
+      {
+        "question": "How do you handle Non-Disclosure Agreements (NDAs) and LGPD data compliance?",
+        "answer": "Confidentiality and data privacy are non-negotiable principles. For corporate (B2B) and government clients, we formally execute a bilateral Non-Disclosure Agreement (NDA) prior to accessing any source code, database, or proprietary business logic. Furthermore, operations strictly adhere to the Brazilian General Data Protection Law (LGPD - Law No. 13.709/2018), backed by official appointment as a Public Sector Data Protection Officer (DPO). No client data is ever shared, monetized, or publicly disclosed."
       }
     ]
   },
@@ -212,5 +216,93 @@
         "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
       }
     ]
+  },
+  "legal": {
+    "privacyLink": "Privacy Policy & LGPD",
+    "termsLink": "Terms of Use",
+    "ndaLink": "Non-Disclosure Agreement (NDA)",
+    "complianceBadge": "LGPD Compliant (Law 13.709/18) & Strict NDA",
+    "modalTitle": "Institutional Policies & Legal Compliance",
+    "modalSubtitle": "Transparency, data privacy, and strict confidentiality for B2B and government clients.",
+    "closeBtn": "Close",
+    "openStandalone": "Open in dedicated page",
+    "backToHome": "← Back to Portfolio",
+    "dpoContactLabel": "Direct DPO / LGPD Officer Contact:",
+    "copyEmail": "Copy Email",
+    "copied": "Copied!",
+    "tabs": {
+      "privacy": "Privacy & LGPD",
+      "terms": "Terms of Use",
+      "nda": "Confidentiality & NDA"
+    },
+    "privacyContent": {
+      "title": "Privacy and Data Protection Policy (LGPD Compliance)",
+      "updated": "Last updated: November 2026",
+      "intro": "This Privacy Policy sets forth the governance, transparency, and data protection practices maintained by 70.178.625 LUCAS PAIVA SANTOS DE OLIVEIRA (Tax ID / CNPJ: 70.178.625/0001-19), under the technical responsibility of Lucas Paiva Santos de Oliveira, in strict compliance with the Brazilian General Data Protection Law (LGPD - Federal Law No. 13.709/2018), the Brazilian Civil Rights Framework for the Internet (Law No. 12.965/2014), and international information security standards.",
+      "sections": [
+        {
+          "heading": "1. Data Controller and Data Protection Officer (DPO)",
+          "body": "Data processing activities are conducted under the responsibility of Lucas Paiva Santos de Oliveira, principal of individual enterprise (MEI) 70.178.625 LUCAS PAIVA SANTOS DE OLIVEIRA (CNPJ: 70.178.625/0001-19), a software engineer and technical consultant formally qualified and appointed as a Sectoral Data Protection Officer (DPO) in the public sector (Ordinance No. 059/2026). Direct contact with the DPO: lucaspaiva-lp@outlook.com."
+        },
+        {
+          "heading": "2. Guiding Principles of Data Processing",
+          "body": "All data processing operations strictly adhere to the core principles of Article 6 of the LGPD:\n• Purpose and Suitability: Data is collected strictly for legitimate, explicit, and specified purposes (technical proposal formulation, execution of IT service contracts, and official tax invoice issuance).\n• Necessity and Data Minimization: Processing is strictly limited to the minimum necessary to fulfill technical project scope.\n• Free Access and Data Quality: Unrestricted and easy access to personal data records guaranteed to data subjects.\n• Security and Prevention: Rigorous technical measures (encryption, container isolation with Docker, strict credentials management) to safeguard against unauthorized access.\n• Non-Discrimination and Accountability: Continuous proactive governance and compliance demonstration."
+        },
+        {
+          "heading": "3. Data Collection on Website and B2B/Government Contracts",
+          "body": "• Browsing Data: This portfolio does not employ intrusive tracking cookies, third-party advertising trackers, or commercialize behavioral analytics.\n• Direct Inquiries and Proposals: Information provided voluntarily via corporate channels (name, title, corporate email, corporate registration, and technical project requirements) is kept under strict confidentiality for pre-contractual and contractual operations.\n• Contracted Client Systems: When contracted to build or maintain backend architectures, we act as a Data Processor, operating strictly under the instructions and governance policies established by the client (Data Controller)."
+        },
+        {
+          "heading": "4. Non-Commercialization and Data Sharing Restrictions",
+          "body": "The sale, licensing, or unauthorized transfer of technical, cadastral, or institutional data is strictly forbidden. Any data sharing occurs solely when mandated by statutory, fiscal, or regulatory requirements (e.g., corporate tax information required for official electronic service invoice issuance with municipal tax authorities)."
+        },
+        {
+          "heading": "5. Rights of Data Subjects",
+          "body": "Pursuant to Article 18 of the LGPD, data subjects and corporate representatives may, at any time and free of charge, request confirmation of processing, access, rectification, portability, anonymization, or deletion of data not subject to mandatory legal retention by contacting lucaspaiva-lp@outlook.com."
+        }
+      ]
+    },
+    "termsContent": {
+      "title": "Website Terms of Use and Service Contracting Conditions",
+      "updated": "Last updated: November 2026",
+      "intro": "These Terms of Use govern the institutional website and the general conditions applicable to technical proposals and software engineering services provided by 70.178.625 LUCAS PAIVA SANTOS DE OLIVEIRA (CNPJ: 70.178.625/0001-19), represented by Lucas Paiva Santos de Oliveira.",
+      "sections": [
+        {
+          "heading": "1. Purpose and Institutional Nature",
+          "body": "This website serves as the official portfolio showcasing technical qualifications, professional certifications, and open-source systems developed by Lucas Paiva, as well as an institutional communication channel for software engineering, scalable backend systems, architecture consulting, and B2B/government contracting."
+        },
+        {
+          "heading": "2. Intellectual Property and Source Code Ownership",
+          "body": "• Website Assets: The structure, diagrams, text, and visual assets of this portfolio are the exclusive property of Lucas Paiva Santos de Oliveira / 70.178.625 LUCAS PAIVA SANTOS DE OLIVEIRA.\n• Commissioned Software: For custom software engineering engagements, upon full settlement of contract terms, 100% of patrimonial and intellectual property rights to the source code, container setups, and technical documentation are transferred to the client, ensuring zero vendor lock-in."
+        },
+        {
+          "heading": "3. Contracting Framework and Official Invoicing",
+          "body": "Engagements are formalized via written IT Service Contracts between Legal Entities (B2B/PJ) or with public institutions pursuant to Brazilian Public Procurement regulations (Law No. 14.133/2021). All contracted work is supported by official electronic tax invoicing (NFS-e)."
+        },
+        {
+          "heading": "4. Governing Law and Jurisdiction",
+          "body": "These terms are governed by the laws of the Federative Republic of Brazil, notably the Civil Code (Law No. 10.406/2002), the Civil Rights Framework for the Internet (Law No. 12.965/2014), and the General Data Protection Law (Law No. 13.709/2018)."
+        }
+      ]
+    },
+    "ndaContent": {
+      "title": "Confidentiality Guidelines and Non-Disclosure Agreements (NDA)",
+      "updated": "Institutional Security Standard",
+      "intro": "To provide optimal assurance when serving private enterprises, high-profile corporations, and public administration bodies, we enforce rigorous technical confidentiality and institutional secrecy standards.",
+      "sections": [
+        {
+          "heading": "1. Execution of Bilateral Non-Disclosure Agreements (NDAs)",
+          "body": "Prior to obtaining access to private source repositories, enterprise databases, network architectures, or cloud access tokens, a comprehensive bilateral NDA is formally executed. The agreement safeguards both parties with strict non-disclosure obligations, intellectual property protections, and liability terms."
+        },
+        {
+          "heading": "2. Strict Omission of Proprietary & Government Systems",
+          "body": "In strict compliance with confidentiality covenants and executed NDAs, proprietary, institutional, governmental, and defense-related software systems developed under non-disclosure obligations are deliberately omitted from this public portfolio. Only authorized public and open-source projects are displayed."
+        },
+        {
+          "heading": "3. DevSecOps Standards and Secure Secrets Governance",
+          "body": "• Secrets Governance: No credentials, tokens, or private keys are hardcoded in source control. Strict runtime environment variable injection and secure secret managers are utilized.\n• Containerized Isolation: Strict local and staging isolation using Docker, preventing any cross-contamination between client environments.\n• Secure Post-Project Sanitization: Upon final delivery and sprint validation, all temporary staging replicas, local databases, and temporary access keys are irrevocably purged and destroyed."
+        }
+      ]
+    }
   }
 }

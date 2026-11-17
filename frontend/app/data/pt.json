@@ -6,8 +6,8 @@
   "certificationsTitle": "Certificações Técnicas",
   "certificationsSub": "Histórico de validação em engenharia de software e desenvolvimento backend.",
   "certificationsBtn": "Acessar Repositório",
-  "footerDevelopedBy": "Desenvolvido por lucaspaiva-lp.",
-  "footerCnpj": "CNPJ: 70.178.625/0001-19",
+  "footerDevelopedBy": "",
+  "footerCnpj": "CNPJ: 70.128.625/0001-19",
   "footerB2b": "Emissão de Nota Fiscal (NF-e) • Atendimento PJ & B2B",
   "sidebar": {
     "role": "Engenheiro de Software",
@@ -134,7 +134,7 @@
       "badge": "Pessoa Jurídica (PJ)",
       "title": "Faturamento Corporativo & Contratos B2B",
       "description": "Atendimento formal com emissão de Nota Fiscal (NF-e de serviços), contrato de prestação de serviços com SLA e acordo de confidencialidade (NDA).",
-      "cnpj": "CNPJ: 70.178.625/0001-19"
+      "cnpj": "CNPJ: 70.128.625/0001-19"
     }
   },
   "faq": {
@@ -143,7 +143,7 @@
     "items": [
       {
         "question": "Você atende como Pessoa Jurídica (PJ) e emite Nota Fiscal?",
-        "answer": "Sim! Todos os serviços podem ser faturados via PJ através do CNPJ 70.178.625/0001-19. Forneço emissão de Nota Fiscal eletrônica de serviços (NFS-e), elaboração de contrato de prestação de serviços e acordo de confidencialidade (NDA) para empresas de qualquer porte."
+        "answer": "Sim! Todos os serviços podem ser faturados via PJ através do CNPJ 70.128.625/0001-19. Forneço emissão de Nota Fiscal eletrônica de serviços (NFS-e), elaboração de contrato de prestação de serviços e acordo de confidencialidade (NDA) para empresas de qualquer porte."
       },
       {
         "question": "Quais são as formas de pagamento e como funciona o processo de trabalho?",
@@ -172,6 +172,10 @@
       {
         "question": "O escopo e o orçamento podem ser negociados?",
         "answer": "Sim. Cada projeto possui complexidades únicas. Os valores dos pacotes representam o investimento mínimo (a partir de). O escopo e o investimento final são adaptados conforme funcionalidades sob medida, adendos técnicos e requisitos da sua demanda."
+      },
+      {
+        "question": "Como funciona o Acordo de Confidencialidade (NDA) e a conformidade com a LGPD?",
+        "answer": "A confidencialidade e a privacidade de dados são princípios absolutos. Para clientes corporativos (B2B) e órgãos públicos, celebramos formalmente um Acordo de Confidencialidade (NDA) bilateral antes do compartilhamento de qualquer código, banco de dados ou segredo de negócio. Além disso, operamos em total conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018), com respaldo de atuação oficial como Encarregado Setorial de Proteção de Dados (DPO) no setor público. Nenhum dado institucional ou sensível é exposto ou comercializado."
       }
     ]
   },
@@ -211,5 +215,93 @@
         "url": "https://www.linkedin.com/in/lucaspaiva-lp/details/honors/"
       }
     ]
+  },
+  "legal": {
+    "privacyLink": "Política de Privacidade & LGPD",
+    "termsLink": "Termos de Uso",
+    "ndaLink": "Acordo de Confidencialidade (NDA)",
+    "complianceBadge": "Conformidade LGPD (Lei 13.709/18) & Sigilo NDA",
+    "modalTitle": "Políticas Institucionais & Conformidade Legal",
+    "modalSubtitle": "Transparência, proteção de dados e sigilo absoluto para clientes B2B e órgãos públicos.",
+    "closeBtn": "Fechar",
+    "openStandalone": "Abrir em página dedicada",
+    "backToHome": "← Voltar ao Portfólio",
+    "dpoContactLabel": "Canal Direto do DPO / Encarregado LGPD:",
+    "copyEmail": "Copiar E-mail",
+    "copied": "Copiado!",
+    "tabs": {
+      "privacy": "Privacidade & LGPD",
+      "terms": "Termos de Uso",
+      "nda": "Confidencialidade & NDA"
+    },
+    "privacyContent": {
+      "title": "Política de Privacidade e Proteção de Dados (LGPD)",
+      "updated": "Última atualização: Novembro de 2026",
+      "intro": "Esta Política de Privacidade estabelece as diretrizes de governança, transparência e proteção de dados praticadas por 70.128.625 LUCAS PAIVA SANTOS DE OLIVEIRA (CNPJ: 70.128.625/0001-19), sob responsabilidade de Lucas Paiva Santos de Oliveira, em estrita conformidade com a Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD), o Marco Civil da Internet (Lei nº 12.965/2014) e as melhores práticas de segurança da informação.",
+      "sections": [
+        {
+          "heading": "1. Controlador e Encarregado pelo Tratamento de Dados (DPO)",
+          "body": "O tratamento de dados é realizado sob responsabilidade de Lucas Paiva Santos de Oliveira, titular da empresa individual (MEI) 70.128.625 LUCAS PAIVA SANTOS DE OLIVEIRA (CNPJ: 70.128.625/0001-19), engenheiro de software e consultor técnico formalmente qualificado e nomeado como Encarregado Setorial de Proteção de Dados (DPO) na administração pública (Portaria nº 059/2026). Contato direto do Encarregado: lucaspaiva-lp@outlook.com."
+        },
+        {
+          "heading": "2. Princípios Norteadores do Tratamento",
+          "body": "Todas as atividades de tratamento de dados obedecem aos princípios fundamentais do Art. 6º da LGPD:\n• Finalidade e Adequação: Os dados são coletados exclusivamente para propósitos legítimos, explícitos e informados (elaboração de propostas técnicas, execução de contratos de prestação de serviços de TI e emissão de Notas Fiscais eletrônicas).\n• Necessidade e Minimização: Coleta estrita dos dados necessários ao escopo técnico ou contratual.\n• Livre Acesso e Qualidade: Garantia de consulta facilitada e exatidão dos dados aos titulares.\n• Segurança e Prevenção: Implementação de medidas técnicas (criptografia, segregação de ambientes com Docker, controle rígido de chaves) contra acessos não autorizados.\n• Não Discriminação e Responsabilização: Demonstração de boas práticas e governança preventiva contínua."
+        },
+        {
+          "heading": "3. Coleta de Dados no Site e em Contratos B2B/Governo",
+          "body": "• Dados de Navegação: Este portfólio não utiliza cookies intrusivos, rastreadores de terceiros para publicidade nem comercializa informações comportamentais.\n• Dados de Contato e Propostas: Informações enviadas voluntariamente por e-mail ou mensagens corporativas (nome, cargo, e-mail institucional, CNPJ/Razão Social e requisitos do projeto) são mantidas sob confidencialidade estrita para fins pré-contratuais e contratuais.\n• Dados de Sistemas Contratados: Quando contratado para desenvolvimento ou sustentação, atuamos na condição de Operador de Dados, tratando eventuais dados apenas conforme as instruções e políticas de segurança do Controlador (cliente)."
+        },
+        {
+          "heading": "4. Compartilhamento e Não Comercialização",
+          "body": "É vedada categoricamente a venda, licenciamento ou repasse de quaisquer dados cadastrais, técnicos ou institucionais a terceiros. O compartilhamento ocorre exclusivamente quando exigido por obrigação legal ou fiscal (ex: dados cadastrais necessários para emissão de Nota Fiscal de Serviços eletrônica junto à Receita Federal e Prefeitura)."
+        },
+        {
+          "heading": "5. Direitos dos Titulares de Dados",
+          "body": "Nos termos do Art. 18 da LGPD, os titulares de dados ou seus representantes corporativos podem, a qualquer momento e sem custos, solicitar a confirmação do tratamento, acesso, retificação, portabilidade, anonimização ou exclusão de dados pessoais não sujeitos a retenção legal obrigatória através do e-mail lucaspaiva-lp@outlook.com."
+        }
+      ]
+    },
+    "termsContent": {
+      "title": "Termos de Uso do Site e Condições de Prestação de Serviços",
+      "updated": "Última atualização: Novembro de 2026",
+      "intro": "Os presentes Termos de Uso regem a utilização deste site institucional e os parâmetros gerais das propostas e serviços técnicos de engenharia de software fornecidos por 70.128.625 LUCAS PAIVA SANTOS DE OLIVEIRA (CNPJ: 70.128.625/0001-19), representada por Lucas Paiva Santos de Oliveira.",
+      "sections": [
+        {
+          "heading": "1. Objeto e Natureza Institucional",
+          "body": "Este site tem como objetivo apresentar o histórico de qualificações técnicas, certificações profissionais e projetos de código aberto de autoria do desenvolvedor, além de servir como canal oficial para solicitações de serviços de engenharia de software, desenvolvimento backend, arquitetura de sistemas e consultoria técnica corporativa e governamental."
+        },
+        {
+          "heading": "2. Propriedade Intelectual e Cessão do Código Desenvolvido",
+          "body": "• Conteúdo do Site: A estrutura, textos, diagramas e design deste portfólio são de titularidade de Lucas Paiva Santos de Oliveira / 70.128.625 LUCAS PAIVA SANTOS DE OLIVEIRA.\n• Projetos Contratados: Para todos os serviços de desenvolvimento sob encomenda, após a quitação do contrato, é transferida 100% da titularidade dos direitos patrimoniais do código-fonte desenvolvido, containers e documentações ao cliente contratante, sem retenção de vendor lock-in."
+        },
+        {
+          "heading": "3. Modelo de Contratação e Faturamento Fiscal",
+          "body": "Todos os serviços são formalizados via Contrato de Prestação de Serviços de TI entre Pessoas Jurídicas (PJ) ou com entidades públicas amparadas na Lei nº 14.133/2021. Toda prestação de serviços é formalizada com a respectiva emissão de Nota Fiscal de Serviços eletrônica (NFS-e)."
+        },
+        {
+          "heading": "4. Legislação Aplicável e Jurisdição",
+          "body": "Estes termos são regidos pelas leis vigentes na República Federativa do Brasil, em especial o Código Civil (Lei nº 10.406/2002), o Marco Civil da Internet (Lei nº 12.965/2014) e a LGPD (Lei nº 13.709/2018)."
+        }
+      ]
+    },
+    "ndaContent": {
+      "title": "Diretrizes de Confidencialidade e Acordo de Sigilo (NDA)",
+      "updated": "Padrão de Segurança Institucional",
+      "intro": "Para assegurar a máxima confiabilidade no atendimento a empresas privadas, corporações de grande porte e órgãos da administração pública, adotamos políticas severas de confidencialidade técnica e proteção de segredos institucionais.",
+      "sections": [
+        {
+          "heading": "1. Celebração Prévia de NDA Bilateral",
+          "body": "Antes do acesso a qualquer repositório privado, banco de dados corporativo, diagramas de rede ou credenciais em nuvem, firmamos formalmente um Acordo de Não Divulgação (NDA - Non-Disclosure Agreement) bilateral. O documento resguarda integralmente ambas as partes e estabelece sanções e responsabilidades claras quanto ao sigilo."
+        },
+        {
+          "heading": "2. Omissão Deliberada de Sistemas do Portfólio Público",
+          "body": "Em cumprimento irrestrito às cláusulas de confidencialidade e aos NDAs assinados, nenhum sistema proprietário, institucional, governamental ou militar desenvolvido sob sigilo é exposto, citado ou exibido em nosso portfólio público. O portfólio exibe apenas projetos públicos e open-source devidamente autorizados."
+        },
+        {
+          "heading": "3. Padrões DevSecOps e Gestão Segura de Credenciais",
+          "body": "• Gerenciamento Seguro de Segredos: Nenhuma credencial, token ou chave privada é versionada em repositórios (hardcoded). Utilizamos injeção estrita de variáveis de ambiente e cofres de segredos.\n• Isolamento em Containers: Desenvolvimento isolado através de Docker, prevenindo contaminação cruzada de dados ou ambientes.\n• Destruição Segura ao Fim do Projeto: Ao término da entrega e validação final, réplicas locais de dados temporários e credenciais temporárias de homologação são revogadas e permanentemente destruídas."
+        }
+      ]
+    }
   }
 }

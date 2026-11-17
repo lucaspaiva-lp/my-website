@@ -1,19 +1,28 @@
 "use client";
 
+import { useState } from "react";
 import ProfileSidebar from "./ProfileSidebar";
 import ProjectCard from "./ProjectCard";
 import Certificates from "./Certificates";
 import AwardsSection from "./AwardsSection";
 import FaqSection from "./FaqSection";
 import PricingSection from "./PricingSection";
+import LegalModal, { LegalTab } from "./LegalModal";
 import { getProjectsData } from "../app/data/projects";
 import { useLanguage } from "../app/data/LanguageContext";
 import { LanguageToggle } from "../app/data/LanguageToggle";
-import { Code2, Award, Lock } from "lucide-react";
+import { Code2, Award, Lock, ShieldCheck, FileText } from "lucide-react";
 
-export default function DashboardContent({ githubData }: { githubData: any }) {
+export default function DashboardContent({}: { githubData?: unknown } = {}) {
   const { t } = useLanguage();
   const translatedProjects = getProjectsData(t);
+  const [legalModalOpen, setLegalModalOpen] = useState(false);
+  const [legalModalTab, setLegalModalTab] = useState<LegalTab>("privacy");
+
+  const openLegal = (tab: LegalTab) => {
+    setLegalModalTab(tab);
+    setLegalModalOpen(true);
+  };
 
   return (
     <div className="min-h-screen bg-[#F4F3EF] dark:bg-black text-[#1E1C1D] dark:text-zinc-100 selection:bg-[#1E1C1D] selection:text-[#F4F3EF] dark:selection:bg-zinc-800 dark:selection:text-zinc-100 relative transition-colors duration-200">
@@ -99,25 +108,69 @@ export default function DashboardContent({ githubData }: { githubData: any }) {
           <FaqSection />
 
           {/* Footer */}
-          <footer className="mt-4 pt-6 border-t border-[#DDD9D0] dark:border-zinc-900 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-[#81807C] dark:text-zinc-500">
-            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-center sm:text-left">
-              <span>{t.footerDevelopedBy}</span>
-              <span className="hidden sm:inline text-[#DDD9D0] dark:text-zinc-700">•</span>
-              <span className="font-mono text-[11px] text-[#1E1C1D] dark:text-zinc-300 font-medium">
-                {t.footerCnpj}
-              </span>
+          <footer className="mt-4 pt-6 border-t border-[#DDD9D0] dark:border-zinc-900 flex flex-col gap-3.5 text-xs text-[#81807C] dark:text-zinc-500">
+            {/* Linha 1: Dados Corporativos e Atendimento B2B */}
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
+              <div className="flex items-center text-center sm:text-left">
+                <span className="font-mono text-[11px] text-[#1E1C1D] dark:text-zinc-300 font-medium">
+                  {t.footerCnpj}
+                </span>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <span className="text-[11px] text-[#6B6864] dark:text-zinc-400">
+                  {t.footerB2b}
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-2.5">
-              <span className="text-[11px] text-[#6B6864] dark:text-zinc-400">
-                {t.footerB2b}
-              </span>
-              <span className="text-[#DDD9D0] dark:text-zinc-700">•</span>
-              <span className="font-mono text-[10px] text-[#9E9B95] dark:text-zinc-600">v1.0.5</span>
+
+            {/* Linha 2: Termos de Uso, Política de Privacidade (LGPD) e Acordo de Confidencialidade (NDA) */}
+            <div className="pt-3 border-t border-[#EAE7DF] dark:border-zinc-900/80 flex flex-col sm:flex-row justify-between items-center gap-2.5 text-[11px]">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1.5 text-[#6B6864] dark:text-zinc-400">
+                <button
+                  type="button"
+                  onClick={() => openLegal("privacy")}
+                  className="hover:text-[#1E1C1D] dark:hover:text-zinc-200 underline-offset-4 hover:underline transition-colors flex items-center gap-1 cursor-pointer"
+                >
+                  <ShieldCheck size={13} className="text-emerald-600 dark:text-emerald-500" />
+                  <span>{t.legal.privacyLink}</span>
+                </button>
+                <span className="text-[#DDD9D0] dark:text-zinc-800">•</span>
+                <button
+                  type="button"
+                  onClick={() => openLegal("terms")}
+                  className="hover:text-[#1E1C1D] dark:hover:text-zinc-200 underline-offset-4 hover:underline transition-colors flex items-center gap-1 cursor-pointer"
+                >
+                  <FileText size={13} className="text-[#6B6864] dark:text-zinc-400" />
+                  <span>{t.legal.termsLink}</span>
+                </button>
+                <span className="text-[#DDD9D0] dark:text-zinc-800">•</span>
+                <button
+                  type="button"
+                  onClick={() => openLegal("nda")}
+                  className="hover:text-[#1E1C1D] dark:hover:text-zinc-200 underline-offset-4 hover:underline transition-colors flex items-center gap-1 cursor-pointer"
+                >
+                  <Lock size={12} className="text-[#6B6864] dark:text-zinc-400" />
+                  <span>{t.legal.ndaLink}</span>
+                </button>
+              </div>
+
+              <div className="flex items-center gap-1.5 text-[10px] font-mono text-[#81807C] dark:text-zinc-500 bg-white/60 dark:bg-zinc-900/50 border border-[#DDD9D0] dark:border-zinc-800/80 px-2.5 py-1 rounded-full shadow-2xs">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                <span>{t.legal.complianceBadge}</span>
+              </div>
             </div>
           </footer>
         </section>
 
       </main>
+
+      {/* Modal Institucional de Privacidade, Termos e NDA */}
+      <LegalModal
+        key={legalModalTab}
+        isOpen={legalModalOpen}
+        onClose={() => setLegalModalOpen(false)}
+        initialTab={legalModalTab}
+      />
     </div>
   );
 }
